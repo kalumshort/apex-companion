@@ -14,6 +14,7 @@ import {
 
 import HomeScreen from './containers/HomePageScreen';
 import LegendsListScreen from './containers/legendsListScreen';
+import LegendDetailScreen from './containers/LegendDetailScreen';
 
 import MenuButton from './components/MenuButton';
 
@@ -24,7 +25,7 @@ const DrawerConfig = {
 }
 
 // Styling the stack naviagtors
-const navigationOptionsHome = ({ navigation }) => {
+const navigationOptions = ({ navigation }) => {
     return {
         headerRight: (
             <MenuButton
@@ -36,7 +37,6 @@ const navigationOptionsHome = ({ navigation }) => {
             style={{width: 70, height: 40, padding:2}}
              source={require('./assets/apex-legends-logo-white.png')} />
         ),
-        title: 'Home',
         headerStyle: {
             backgroundColor: 'black',
         },
@@ -62,7 +62,7 @@ const HomeStack = createStackNavigator(
         }
     },
     {
-        defaultNavigationOptions: navigationOptionsHome,
+        defaultNavigationOptions: navigationOptions,
     }
 );
 
@@ -70,7 +70,13 @@ const LegendsStack = createStackNavigator(
     {
         Legends: {
             screen: LegendsListScreen
+        },
+        Detail: {
+            screen: LegendDetailScreen
         }
+    },
+    {
+        defaultNavigationOptions: navigationOptions,
     }
 );
 

@@ -12,12 +12,18 @@ import {
 class LegendsListScreen extends Component {
      constructor(props){
          super(props);
+         this.handlePress = this.handlePress.bind(this);
      }
+    handlePress = (item) =>{
+        this.props.navigation.navigate('Detail', {
+              item
+        });
+    };
      render(){
          return(
              <>
              <LegendsList
-             
+             onPress={this.handlePress}
              />
              </>
          )
