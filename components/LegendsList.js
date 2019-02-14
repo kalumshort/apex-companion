@@ -5,7 +5,11 @@ import {
     TouchableHighlight, 
     StyleSheet,
     FlatList,
+    Image,
+    Dimensions,
 } from 'react-native';
+
+import { Ionicons } from '@expo/vector-icons';
 
 import legends from '../assets/legends.json';
 
@@ -24,14 +28,23 @@ class LegendsList extends Component {
         const handlePress = () => {
             this.props.onPress(item);
         }
+        const source = {uri: item.img}
         return (
-            <View style={styles.buttonContainer}>
+            <View style={styles.container}>
                 <TouchableHighlight 
-                underlayColor='#e4e4e4' 
                 onPress={handlePress} 
                 style={styles.button}
                 >
-                    <Text style={styles.listItem}>{item.name}</Text>
+                <View style={styles.buttonContents}>
+                    <Image 
+                    style={styles.image}
+                    source={source}/>
+                    <Ionicons
+                        name="md-arrow-round-forward"
+                        color='white'
+                        size={37}
+                    />
+                </View>
                 </TouchableHighlight>
             </View>
         );
@@ -57,19 +70,27 @@ class LegendsList extends Component {
 
 export default LegendsList;
 
+const WIDTH = Dimensions.get('window').width;
+const HEIGHT = Dimensions.get('window').height;
+
 const styles = StyleSheet.create({
-    listItem: {
-        height:50,
-        fontSize: 18,
-        padding: 10,
+    container: {
+        backgroundColor: 'black',
+        flex: 1,
 
     },
     button: {
-        backgroundColor: '#fff',
     },
-    buttonContainer: {
-        flex: 1,
-        justifyContent: 'center',
+    buttonContents: {
+        alignItems:'center',
     },
+    image: {
+        width: WIDTH*0.6,
+        height: HEIGHT*0.6,
+    },
+    name: {
+        color: 'white'
+    }
+
 
 });

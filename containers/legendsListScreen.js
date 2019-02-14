@@ -16,7 +16,7 @@ class LegendsListScreen extends Component {
      }
     handlePress = (item) =>{
         this.props.navigation.navigate('Detail', {
-              item
+            item
         });
     };
      render(){
