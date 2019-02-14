@@ -1,0 +1,202 @@
+[
+    {
+        "name":"Bangalore",
+        "sub-heading": "Professional Soldier",
+        "bio":"Born into a military family where she, her parents, and her four older brothers all served in the IMC Armed Forces, Bangalore has been an exceptional soldier since she was young. She was top of her class at the IMC Military Academy and the only cadet who could take apart a Peacekeeper, equip it with a Precision Choke hop-up, and put it back together in under twenty seconds – blindfolded.",
+        "real-name": "Anita Williams",
+        "age": "35",
+        "abilities": {
+            "tactical":{
+                "name": "Smoke Launcher",
+                "about": "Fire a high-velocity smoke canister that explodes into a smoke wall on impact.",
+                "img":""
+            },
+            "passive":{
+                "name": "Double Time",
+                "about": "Taking fire while sprinting makes you move faster for a brief time.",
+                "img": ""
+            },
+            "ultimate":{
+                "name": "Rolling Thunder",
+                "about": "Call in an artillery strike that slowly creeps across the landscape.",
+                "img": ""
+            }
+        }
+        
+    },
+    {
+        "name":"BloodHound",
+        "sub-heading": "Technological Tracker",
+        "bio":"Bloodhound is known across the Outlands as one of the greatest game hunters the Frontier has ever seen – and that’s about all anyone knows. Their identity is a mystery wrapped in layers of rumors: they are fabulously wealthy, a bloodthirsty murderer, a Goliath whisperer, a former slave, half bat, and a dozen other things depending on who’s doing the whispering.",
+        "real-name": "Unknown",
+        "age": "Unknown",
+        "abilities": {
+            "tactical":{
+                "name": "Eye of the Allfather",
+                "about": "Briefly reveal hidden enemies, traps, and clues throughout structures in front of you.",
+                "img":""
+            },
+            "passive":{
+                "name": "Tracker",
+                "about": "See tracks left behind by your foes.",
+                "img": ""
+            },
+            "ultimate":{
+                "name": "Beast of the Hunt",
+                "about": "Enhances your senses, allowing you move faster and highlighting your prey.",
+                "img": ""
+            }
+        }
+        
+    },
+    {
+        "name":"CAUSTIC",
+        "sub-heading": "Toxic Trapper",
+        "bio":"Before there was Caustic, a scientist named Alexander Nox worked at Humbert Labs, the Frontier’s leading manufacturer of pesticide gases. With a glut of pesticides needed to protect the growing Frontier colonies’ crops, Humbert Labs was constantly on the hunt for better and stronger formulas. Nox was one of their brightest scientists and worked day and night developing new gases. But to make sure they worked, he needed to test them on more than just inert tissue: he needed something living.",
+        "real-name": "Alexander Nox",
+        "age": "48",
+        "abilities": {
+            "tactical":{
+                "name": "Nox Gas Trap",
+                "about": "Drop canisters that release deadly Nox gas when shot or triggered by enemies.",
+                "img":""
+            },
+            "passive":{
+                "name": "Nox Vision",
+                "about": "Allows you to see enemies through your gas.",
+                "img": ""
+            },
+            "ultimate":{
+                "name": "Nox Gas Grenade",
+                "about": "Blankets a large area in Nox gas.",
+                "img": ""
+            }
+        }
+        
+    },
+    {
+        "name":"GIBRALTAR",
+        "sub-heading": "Shielded Fortress",
+        "bio":"Gibraltar is a gentle giant with a wild side. The son of two SARAS (Search and Rescue Association of Solace) volunteers, he has always been skilled at getting others out of dangerous situations that are common in the Outlands. However, he only began to understand the value of protecting others when he and his boyfriend stole his father’s motorcycle, took it on a joyride, and got trapped by a deadly mudslide. His parents saved them, and his father lost an arm in the process. Gibraltar has never forgotten that sacrifice and has devoted his life to helping those in need.",
+        "real-name": "Makoa Gibraltar",
+        "age": "30",
+        "abilities": {
+            "tactical":{
+                "name": "Dome of Protection",
+                "about": "Throw down a dome-shield that blocks attacks for 15 seconds.",
+                "img":""
+            },
+            "passive":{
+                "name": "Gun Shield",
+                "about": "Aiming down sights deploys a gun shield that blocks incoming fire.",
+                "img": ""
+            },
+            "ultimate":{
+                "name": "Defensive Bombardment",
+                "about": "Call in a concentrated mortar strike on a marked position.",
+                "img": ""
+            }
+        }
+        
+    },
+    {
+        "name":"LIFELINE",
+        "sub-heading": "Combat Medic",
+        "bio":"Ajay Che, aka Lifeline, isn’t someone you would expect to find in the Apex Games. Once the child of wealthy war profiteers, she left home when she learned of the damage her family had caused and enlisted in the Frontier Corps, a humanitarian organization that aids Frontier communities in need. She’s since devoted her life to helping others and joined the Apex Games to fund the Frontier Corps with her winnings.",
+        "real-name": "Ajay Che",
+        "age": "24",
+        "abilities": {
+            "tactical":{
+                "name": "D.O.C. Heal Drone",
+                "about": "Call your Drone of Compassion to automatically heal nearby teammates over time.",
+                "img":""
+            },
+            "passive":{
+                "name": "Combat Medic",
+                "about": "Revive knocked down teammates faster while protected by a shield wall. Healing items are used 25% faster.",
+                "img": ""
+            },
+            "ultimate":{
+                "name": "Care Package",
+                "about": "Call in a drop pod full of high-quality defensive gear.",
+                "img": ""
+            }
+        }
+        
+    },
+    {
+        "name":"MIRAGE",
+        "sub-heading": "Holographic Trickster",
+        "bio":"Mirage is the kind of guy who likes to stand out. The youngest of four brothers, he perfected the art of fooling around to get attention. The one thing he took seriously was Holo-Pilot technology: introduced to the illusion-creating tech by his engineer mother, he poured over the mechanisms and learned all he could about them. Even when his brothers went MIA during the Frontier War, Mirage and his mother continued to develop holo devices, and the work brought them closer.",
+        "real-name": "Elliott Witt",
+        "age": "30",
+        "abilities": {
+            "tactical":{
+                "name": "Psyche Out",
+                "about": "Send out a holographic decoy to confuse the enemy.",
+                "img":""
+            },
+            "passive":{
+                "name": "Encore!",
+                "about": "Automatically drop a decoy and cloak for five seconds when knocked down.",
+                "img": ""
+            },
+            "ultimate":{
+                "name": "Vanishing Act",
+                "about": "Deploy a team of Decoys to distract enemies while you cloak.",
+                "img": ""
+            }
+        }
+        
+    },
+    {
+        "name":"PATHFINDER",
+        "sub-heading": "Forward Scout",
+        "bio":"Pathfinder is the picture of optimism, despite his circumstances. A MRVN (Mobile Robotic Versatile eNtity) modified to specialize in location scouting and surveying, he booted up decades ago in an abandoned laboratory with no idea who created him or why. With only his MRVN designation to hint at his identity, Pathfinder set off in search of his creator.",
+        "real-name": "MRVN",
+        "age": "UNKNOWN",
+        "abilities": {
+            "tactical":{
+                "name": "Grappling Hook",
+                "about": "Grapple to get to out-of-reach places quickly.",
+                "img":""
+            },
+            "passive":{
+                "name": "Insider Knowledge",
+                "about": "Scan a survey beacon to reveal the ring’s next location.",
+                "img": ""
+            },
+            "ultimate":{
+                "name": "Zipline Gun",
+                "about": "Create a zipline for everyone to use.",
+                "img": ""
+            }
+        }
+        
+    },
+    {
+        "name":"WRAITH",
+        "sub-heading": "Interdimensional Skirmisher",
+        "bio":"Wraith is a whirlwind fighter, able to execute swift and deadly attacks and manipulate spacetime by opening rifts in the fabric of reality — but she has no idea how she got that way. Years ago, she woke up in an IMC Detention Facility for the Mentally Ill with no memory of her life before. She also began hearing a distant voice whispering in her mind that would keep her awake for days on end. Despite nearly driving her insane, once she started to listen and trust it, the voice helped her harness her newfound power of void manipulation and escape the facility.",
+        "real-name": "REDACTED",
+        "age": "REDACTED",
+        "abilities": {
+            "tactical":{
+                "name": "Into the Void",
+                "about": "Reposition quickly through the safety of void space, avoiding all damage.",
+                "img":""
+            },
+            "passive":{
+                "name": "Voices from the Void",
+                "about": "A voice warns you when danger approaches. As far as you can tell, it’s on your side.",
+                "img": ""
+            },
+            "ultimate":{
+                "name": "Dimensional Rift",
+                "about": "Link two locations with portals for 60 seconds, allowing your entire team to use them.",
+                "img": ""
+            }
+        }
+        
+    }
+]

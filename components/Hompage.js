@@ -19,6 +19,7 @@ class HomePage extends Component {
             <>
             <View style={styles.container}>
                 <ScrollView>
+                    {/* VIEW LEGENDS  */}
                     <TouchableHighlight
                     // onPress={handlePress}
                     >
@@ -28,6 +29,8 @@ class HomePage extends Component {
                             <Text style={styles.legendsText}>View Legends</Text>
                         </ImageBackground>
                     </TouchableHighlight>
+
+                    
                 </ScrollView>
             </View>
             </>

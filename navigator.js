@@ -13,6 +13,7 @@ import {
 } from 'react-native';
 
 import HomeScreen from './containers/HomePageScreen';
+import LegendsListScreen from './containers/legendsListScreen';
 
 import MenuButton from './components/MenuButton';
 
@@ -65,10 +66,19 @@ const HomeStack = createStackNavigator(
     }
 );
 
+const LegendsStack = createStackNavigator(
+    {
+        Legends: {
+            screen: LegendsListScreen
+        }
+    }
+);
+
 // MAKING THE DRAWER NAVIGATOR
 const DrawerNavigator = createDrawerNavigator(
     {
         Home: HomeStack,
+        Legends: LegendsStack,
     },
     DrawerConfig
 );
