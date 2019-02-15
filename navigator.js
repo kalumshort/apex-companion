@@ -10,6 +10,7 @@ import {
     Platform,
     Dimensions,
     Image,
+    TouchableHighlight
 } from 'react-native';
 
 import HomeScreen from './containers/HomePageScreen';
@@ -33,9 +34,15 @@ const navigationOptions = ({ navigation }) => {
             />
         ),
         headerLeft: (
+            <TouchableHighlight
+            onPress={() => navigation.navigate('Home')}
+            >
             <Image
             style={{width: 70, height: 40, padding:2}}
-             source={require('./assets/apex-legends-logo-white.png')} />
+            source={require('./assets/apex-legends-logo-white.png')} 
+            />
+            </TouchableHighlight>
+
         ),
         headerStyle: {
             backgroundColor: 'black',

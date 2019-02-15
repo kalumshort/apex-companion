@@ -21,7 +21,7 @@ class HomePage extends Component {
                 <ScrollView>
                     {/* VIEW LEGENDS  */}
                     <TouchableHighlight
-                    // onPress={handlePress}
+                    onPress={this.props.handlePress}
                     >
                         <ImageBackground
                         style={styles.legendsImage}
