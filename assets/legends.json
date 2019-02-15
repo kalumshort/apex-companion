@@ -10,17 +10,17 @@
             "tactical":{
                 "name": "Smoke Launcher",
                 "about": "Fire a high-velocity smoke canister that explodes into a smoke wall on impact.",
-                "img":""
+                "img":"https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-tactical-bangalore.png.adapt.crop16x9.652w.png"
             },
             "passive":{
                 "name": "Double Time",
                 "about": "Taking fire while sprinting makes you move faster for a brief time.",
-                "img": ""
+                "img": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-passive-bangalore.png.adapt.crop16x9.652w.png"
             },
             "ultimate":{
                 "name": "Rolling Thunder",
                 "about": "Call in an artillery strike that slowly creeps across the landscape.",
-                "img": ""
+                "img": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-ultimate-bangalore.png.adapt.crop16x9.652w.png"
             }
         }
         
@@ -36,17 +36,17 @@
             "tactical":{
                 "name": "Eye of the Allfather",
                 "about": "Briefly reveal hidden enemies, traps, and clues throughout structures in front of you.",
-                "img":""
+                "img":"https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-tactical-bloodhound.png.adapt.crop16x9.652w.png"
             },
             "passive":{
                 "name": "Tracker",
                 "about": "See tracks left behind by your foes.",
-                "img": ""
+                "img": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-passive-bloodhound.png.adapt.crop16x9.652w.png"
             },
             "ultimate":{
                 "name": "Beast of the Hunt",
                 "about": "Enhances your senses, allowing you move faster and highlighting your prey.",
-                "img": ""
+                "img": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-ultimate-bloodhound.png.adapt.crop16x9.652w.png"
             }
         }
         
@@ -62,17 +62,19 @@
             "tactical":{
                 "name": "Nox Gas Trap",
                 "about": "Drop canisters that release deadly Nox gas when shot or triggered by enemies.",
-                "img":""
+                "img":"https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-tactical-caustic.png.adapt.crop16x9.652w.png"
             },
             "passive":{
                 "name": "Nox Vision",
                 "about": "Allows you to see enemies through your gas.",
-                "img": ""
+                "img": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-passive-caustic.png.adapt.crop16x9.652w.png"
+
             },
             "ultimate":{
                 "name": "Nox Gas Grenade",
                 "about": "Blankets a large area in Nox gas.",
-                "img": ""
+                "img": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-ultimate-caustic.png.adapt.crop16x9.652w.png"
+
             }
         }
         
@@ -88,17 +90,20 @@
             "tactical":{
                 "name": "Dome of Protection",
                 "about": "Throw down a dome-shield that blocks attacks for 15 seconds.",
-                "img":""
+                "img":"https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-tactical-gibraltar.png.adapt.crop16x9.652w.png"
+
             },
             "passive":{
                 "name": "Gun Shield",
                 "about": "Aiming down sights deploys a gun shield that blocks incoming fire.",
-                "img": ""
+                "img": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-passive-gibraltar.png.adapt.crop16x9.652w.png"
+
             },
             "ultimate":{
                 "name": "Defensive Bombardment",
                 "about": "Call in a concentrated mortar strike on a marked position.",
-                "img": ""
+                "img": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-ultimate-gibraltar.png.adapt.crop16x9.652w.png"
+
             }
         }
         
@@ -114,17 +119,17 @@
             "tactical":{
                 "name": "D.O.C. Heal Drone",
                 "about": "Call your Drone of Compassion to automatically heal nearby teammates over time.",
-                "img":""
+                "img":"https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-tactical-lifeline.png.adapt.crop16x9.652w.png"
             },
             "passive":{
                 "name": "Combat Medic",
                 "about": "Revive knocked down teammates faster while protected by a shield wall. Healing items are used 25% faster.",
-                "img": ""
+                "img": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-passive-lifeline.png.adapt.crop16x9.652w.png"
             },
             "ultimate":{
                 "name": "Care Package",
                 "about": "Call in a drop pod full of high-quality defensive gear.",
-                "img": ""
+                "img": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-ultimate-lifeline.png.adapt.crop16x9.652w.png"
             }
         }
         
@@ -140,17 +145,17 @@
             "tactical":{
                 "name": "Psyche Out",
                 "about": "Send out a holographic decoy to confuse the enemy.",
-                "img":""
+                "img":"https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-tactical-mirage.png.adapt.crop16x9.652w.png"
             },
             "passive":{
                 "name": "Encore!",
                 "about": "Automatically drop a decoy and cloak for five seconds when knocked down.",
-                "img": ""
+                "img": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-passive-mirage.png.adapt.crop16x9.652w.png"
             },
             "ultimate":{
                 "name": "Vanishing Act",
                 "about": "Deploy a team of Decoys to distract enemies while you cloak.",
-                "img": ""
+                "img": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-ultimate-mirage.png.adapt.crop16x9.652w.png"
             }
         }
         
@@ -166,17 +171,17 @@
             "tactical":{
                 "name": "Grappling Hook",
                 "about": "Grapple to get to out-of-reach places quickly.",
-                "img":""
+                "img":"https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-tactical-pathfinder.png.adapt.crop16x9.652w.png"
             },
             "passive":{
                 "name": "Insider Knowledge",
                 "about": "Scan a survey beacon to reveal the ring’s next location.",
-                "img": ""
+                "img": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-passive-pathfinder.png.adapt.crop16x9.652w.png"
             },
             "ultimate":{
                 "name": "Zipline Gun",
                 "about": "Create a zipline for everyone to use.",
-                "img": ""
+                "img": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-ultimate-pathfinder.png.adapt.crop16x9.652w.png"
             }
         }
         
@@ -192,17 +197,17 @@
             "tactical":{
                 "name": "Into the Void",
                 "about": "Reposition quickly through the safety of void space, avoiding all damage.",
-                "img":""
+                "img":"https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-tactical-wraith.png.adapt.crop16x9.652w.png"
             },
             "passive":{
                 "name": "Voices from the Void",
                 "about": "A voice warns you when danger approaches. As far as you can tell, it’s on your side.",
-                "img": ""
+                "img": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-passive-wraith.png.adapt.crop16x9.652w.png"
             },
             "ultimate":{
                 "name": "Dimensional Rift",
                 "about": "Link two locations with portals for 60 seconds, allowing your entire team to use them.",
-                "img": ""
+                "img": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-ultimate-wraith.png.adapt.crop16x9.652w.png"
             }
         }
         
