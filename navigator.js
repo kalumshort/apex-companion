@@ -12,15 +12,17 @@ import {
     Image,
     TouchableHighlight
 } from 'react-native';
-
+// Importing the homepage screens
 import HomeScreen from './containers/HomePageScreen';
-
+// Importing the pages for the legedns pages
 import LegendsListScreen from './containers/legendsListScreen';
 import LegendDetailScreen from './containers/LegendDetailScreen';
-
+// Importing the pages for the gun pages
 import GunListScreen from './containers/GunListScreen';
 import GunDetailScreen from './containers/GunDetailScreen';
-
+// Importing the Map Page
+import MapScreen from './containers/MapPageScreen';
+// Importing the menu button component
 import MenuButton from './components/MenuButton';
 
 //Finding the dimensions of the screen
@@ -66,6 +68,8 @@ const navigationOptions = ({ navigation }) => {
 }
 
 // MAKING THE STACK NAVIGATORS 
+// Stack fot the Home Page
+
 const HomeStack = createStackNavigator(
     {
         Home: {
@@ -77,6 +81,7 @@ const HomeStack = createStackNavigator(
     }
 );
 
+// Stack for the legends pages
 const LegendsStack = createStackNavigator(
     {
         Legends: {
@@ -91,6 +96,7 @@ const LegendsStack = createStackNavigator(
     }
 );
 
+// Stack for the Gun pages
 const GunStack = createStackNavigator(
     {
         Guns: {
@@ -105,12 +111,25 @@ const GunStack = createStackNavigator(
     }
 );
 
+// Stack for the Map Page
+const MapStack = createStackNavigator(
+    {
+        Map: {
+            screen: MapScreen
+        }
+    },
+    {
+        defaultNavigationOptions: navigationOptions,
+    }
+);
+
 // MAKING THE DRAWER NAVIGATOR
 const DrawerNavigator = createDrawerNavigator(
     {
         Home: HomeStack,
         Legends: LegendsStack,
         Guns: GunStack,
+        Map: MapStack
     },
     DrawerConfig
 );

@@ -36,9 +36,13 @@ class GunList extends Component {
                 style={styles.button}
                 >
                 <View style={styles.buttonContents}>
-                   <Text>
+                   {/* <Text style={styles.gunTypeText}>
                        {item.guntype}
-                   </Text>
+                   </Text> */}
+                   <Image
+                       source={source}
+                       style={styles.image}
+                   />
                     
                 </View>
                 </TouchableHighlight>
@@ -81,8 +85,8 @@ const styles = StyleSheet.create({
         alignItems:'center',
     },
     image: {
-        width: WIDTH*0.6,
-        height: HEIGHT*0.6,
+        width: WIDTH*1,
+        height: HEIGHT*0.3,
     },
     name: {
         color: 'white'

@@ -16,7 +16,7 @@ import { Constants, WebBrowser } from 'expo';
 
 const GunDetail = ({item}) => {
 
-    const source = {uri: item.img}
+    const source = {uri: item.mastiff.img}
 
     return(
         <>
@@ -24,6 +24,10 @@ const GunDetail = ({item}) => {
             <ScrollView>
                <View>
                    <Text>{item.guntype}</Text>
+                   <Image
+                       source={source}
+                       style={styles.image}
+                   />
                </View>
             </ScrollView>
         </View>
@@ -43,8 +47,8 @@ const HEIGHT = Dimensions.get('window').height;
         flex: 1,
     },
     image: {
-        width: WIDTH*0.6,
-        height: HEIGHT*0.6,
+        width: WIDTH*0.9,
+        height: HEIGHT*0.2,
     },
     imageContainer:{
         alignItems: 'center',

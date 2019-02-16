@@ -2,25 +2,37 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import HomePage from '../components/Hompage';
 
-class HomeScreen extends Component {
+class MapScreen extends Component {
     constructor(props) {
         super(props);
-        this.handlePress = this.handlePress.bind(this);
+        this.handleLegendsPress = this.handleLegendsPress.bind(this);
+        this.handleGunsPress = this.handleGunsPress.bind(this);
+        this.handleMapPress = this.handleMapPress.bind(this);
     }
-    handlePress = () =>{
+    handleLegendsPress = () =>{
         this.props.navigation.navigate('Legends', {
             
         });
     };
+    handleGunsPress = () => {
+        this.props.navigation.navigate('Guns',{
+
+        });
+    };
+    handleMapPress = () => {
+        this.props.navigation.navigate('Map');
+    }
     render() {
         return(
             <>
             <HomePage
-            handlePress={this.handlePress}
+            handleLegendsPress={this.handleLegendsPress}
+            handleGunsPress={this.handleGunsPress}
+            handleMapPress={this.handleMapPress}
             />
             </>
         )
     }
 }
 
-export default HomeScreen;
+export default MapScreen;

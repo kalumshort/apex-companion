@@ -1,7 +1,7 @@
 [
     {
         "guntype":"Pistols",
-        "img":"",
+        "img":"https://img.rankedboost.com/wp-content/uploads/2019/02/Apex-Legends-Pistols.png",
         "wingman":{
             "name":"Wingman",
             "ammotype":"Heavy",
@@ -42,7 +42,7 @@
     },
     {
         "guntype":"Submachine Gun",
-        "img":"",
+        "img":"https://img.rankedboost.com/wp-content/uploads/2019/02/Apex-Legends-Sub-Machine-Guns.png",
         "prow":{
             "name":"Prowler",
             "ammotype":"Heavy",
@@ -74,7 +74,7 @@
     },
     {
         "guntype":"Assault Rifle",
-        "img":"",
+        "img":"https://img.rankedboost.com/wp-content/uploads/2019/02/Apex-Legends-Assault-Rifles.png",
         "hem":{
             "name":"Hemlock AR",
             "ammotype":"Heavy",
@@ -106,7 +106,7 @@
     },
     {
         "guntype":"Light Machine Gun",
-        "img":"",
+        "img":"https://img.rankedboost.com/wp-content/uploads/2019/02/Apex-Legends-Light-Machine-Guns.png",
         "spit":{
             "name":"M600 Spitfire",
             "ammotype":"Heavy",
@@ -129,7 +129,7 @@
     },
     {
         "guntype":"Sniper Rifle",
-        "img":"",
+        "img":"https://img.rankedboost.com/wp-content/uploads/2019/02/Apex-Legends-Sniper-Rifles.png",
         "triple":{
             "name":"Triple Take",
             "ammotype":"Energy",
@@ -169,7 +169,7 @@
     },
     {
         "guntype":"Shotgun",
-        "img":"",
+        "img":"https://img.rankedboost.com/wp-content/uploads/2019/02/Apex-Legends-Shotguns.png",
         "peace":{
             "name":"Peacekeeper",
             "ammotype":"Shotgun",
@@ -195,7 +195,7 @@
             "magsize":"4",
             "bodydamage":"144",
             "headdamage":"288",
-            "img":""
+            "img":"https://img.rankedboost.com/wp-content/plugins/forge/basic-tier-list-images/apex-shotgun/Mastiff.jpg"
         }
 
     }
