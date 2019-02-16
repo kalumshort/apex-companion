@@ -14,8 +14,12 @@ import {
 } from 'react-native';
 
 import HomeScreen from './containers/HomePageScreen';
+
 import LegendsListScreen from './containers/legendsListScreen';
 import LegendDetailScreen from './containers/LegendDetailScreen';
+
+import GunListScreen from './containers/GunListScreen';
+import GunDetailScreen from './containers/GunDetailScreen';
 
 import MenuButton from './components/MenuButton';
 
@@ -87,11 +91,26 @@ const LegendsStack = createStackNavigator(
     }
 );
 
+const GunStack = createStackNavigator(
+    {
+        Guns: {
+            screen: GunListScreen
+        },
+        Detail: {
+            screen: GunDetailScreen
+        }
+    },
+    {
+        defaultNavigationOptions: navigationOptions,
+    }
+);
+
 // MAKING THE DRAWER NAVIGATOR
 const DrawerNavigator = createDrawerNavigator(
     {
         Home: HomeStack,
         Legends: LegendsStack,
+        Guns: GunStack,
     },
     DrawerConfig
 );
