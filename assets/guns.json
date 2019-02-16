@@ -1,0 +1,202 @@
+[
+    {
+        "guntype":"Pistols",
+        "img":"",
+        "wingman":{
+            "name":"Wingman",
+            "ammotype":"Heavy",
+            "firerate":"Single",
+            "magsize":"6",
+            "bodydamage":"45",
+            "headdamage":"90",
+            "img":""
+        },
+        "moz":{
+            "name":"Wingman",
+            "ammotype":"Shotgun",
+            "firerate":"Single",
+            "magsize":"3",
+            "bodydamage":"45",
+            "headdamage":"66",
+            "img":""
+        },
+        "p2":{
+            "name":"P2020",
+            "ammotype":"Light",
+            "firerate":"Single",
+            "magsize":"10",
+            "bodydamage":"12",
+            "headdamage":"18",
+            "img":""
+        },
+        "re":{
+            "name":"RE-45 Auto",
+            "ammotype":"Heavy",
+            "firerate":"Single",
+            "magsize":"6",
+            "bodydamage":"45",
+            "headdamage":"90",
+            "img":""
+        }
+
+    },
+    {
+        "guntype":"Submachine Gun",
+        "img":"",
+        "prow":{
+            "name":"Prowler",
+            "ammotype":"Heavy",
+            "firerate":"5 Burst",
+            "magsize":"20",
+            "bodydamage":"14",
+            "headdamage":"21",
+            "img":""
+        },
+        "alt":{
+            "name":"Alternator",
+            "ammotype":"Light",
+            "firerate":"Auto",
+            "magsize":"16",
+            "bodydamage":"13",
+            "headdamage":"19",
+            "img":""
+        },
+        "r9":{
+            "name":"R-99",
+            "ammotype":"Light",
+            "firerate":"Auto",
+            "magsize":"18",
+            "bodydamage":"12",
+            "headdamage":"18",
+            "img":""
+        }
+
+    },
+    {
+        "guntype":"Assault Rifle",
+        "img":"",
+        "hem":{
+            "name":"Hemlock AR",
+            "ammotype":"Heavy",
+            "firerate":"Burst/Single",
+            "magsize":"18",
+            "bodydamage":"18",
+            "headdamage":"36",
+            "img":""
+        },
+        "falt":{
+            "name":"VK-47 Flatline",
+            "ammotype":"Heavy",
+            "firerate":"Auto/Single",
+            "magsize":"20",
+            "bodydamage":"16",
+            "headdamage":"32",
+            "img":""
+        },
+        "r3":{
+            "name":"R-301",
+            "ammotype":"Light",
+            "firerate":"Auto/Single",
+            "magsize":"18",
+            "bodydamage":"14",
+            "headdamage":"28",
+            "img":""
+        }
+
+    },
+    {
+        "guntype":"Light Machine Gun",
+        "img":"",
+        "spit":{
+            "name":"M600 Spitfire",
+            "ammotype":"Heavy",
+            "firerate":"Auto",
+            "magsize":"35",
+            "bodydamage":"20",
+            "headdamage":"40",
+            "img":""
+        },
+        "dev":{
+            "name":"Devotion",
+            "ammotype":"Heavy",
+            "firerate":"Auto",
+            "magsize":"44",
+            "bodydamage":"17",
+            "headdamage":"34",
+            "img":""
+        }
+
+    },
+    {
+        "guntype":"Sniper Rifle",
+        "img":"",
+        "triple":{
+            "name":"Triple Take",
+            "ammotype":"Energy",
+            "firerate":"Single",
+            "magsize":"5",
+            "bodydamage":"69",
+            "headdamage":"138",
+            "img":""
+        },
+        "long":{
+            "name":"Longbow DMR",
+            "ammotype":"Heavy",
+            "firerate":"Single",
+            "magsize":"5",
+            "bodydamage":"55",
+            "headdamage":"110",
+            "img":""
+        },
+        "g7":{
+            "name":"G7 Scout",
+            "ammotype":"Light",
+            "firerate":"Single",
+            "magsize":"10",
+            "bodydamage":"30",
+            "headdamage":"60",
+            "img":""
+        },
+        "kraber":{
+            "name":"Kraber .50-Cal",
+            "ammotype":"Special",
+            "firerate":"Bolt-action",
+            "magsize":"4",
+            "bodydamage":"125",
+            "headdamage":"250",
+            "img":""
+        }
+    },
+    {
+        "guntype":"Shotgun",
+        "img":"",
+        "peace":{
+            "name":"Peacekeeper",
+            "ammotype":"Shotgun",
+            "firerate":"Pump-action",
+            "magsize":"6",
+            "bodydamage":"110",
+            "headdamage":"165",
+            "img":""
+        },
+        "eva":{
+            "name":"EVA-8 Auto",
+            "ammotype":"Shotgun",
+            "firerate":"Auto",
+            "magsize":"8",
+            "bodydamage":"63",
+            "headdamage":"90",
+            "img":""
+        },
+        "mastiff":{
+            "name":"Mastiff",
+            "ammotype":"Special",
+            "firerate":"Single",
+            "magsize":"4",
+            "bodydamage":"144",
+            "headdamage":"288",
+            "img":""
+        }
+
+    }
+]
