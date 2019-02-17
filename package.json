@@ -11,6 +11,8 @@
     "navigation": "^5.1.0",
     "react": "^16.8.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
+    "react-native-image-pan-zoom": "^2.1.11",
+    "react-native-image-zoom-viewer": "^2.2.25",
     "react-navigation": "^3.2.3",
     "react-redux": "^6.0.0",
     "redux": "^4.0.1",

@@ -16,18 +16,19 @@ import { Constants, WebBrowser } from 'expo';
 
 const GunDetail = ({item}) => {
 
-    const source = {uri: item.mastiff.img}
+    // const source = {uri: item.mastiff.img}
 
     return(
         <>
         <View style={styles.container}>
             <ScrollView>
                <View>
-                   <Text>{item.guntype}</Text>
-                   <Image
+                   <Text style={styles.name}>{item.guntype}</Text>
+                   {/* <Image
+
                        source={source}
                        style={styles.image}
-                   />
+                   /> */}
                </View>
             </ScrollView>
         </View>
