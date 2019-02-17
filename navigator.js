@@ -22,16 +22,13 @@ import GunListScreen from './containers/GunListScreen';
 import GunDetailScreen from './containers/GunDetailScreen';
 // Importing the Map Page
 import MapScreen from './containers/MapPageScreen';
+// Importing the Contact Screen
+import ContactScreen from './containers/ContactScreen';
 // Importing the menu button component
 import MenuButton from './components/MenuButton';
 
-//Finding the dimensions of the screen
-const WIDTH = Dimensions.get('window').width;
-const DrawerConfig = {
-    drawerWidth: WIDTH*0.75,
-}
 
-// Styling the stack naviagtors
+// Styling the stack navigators
 const navigationOptions = ({ navigation }) => {
     return {
         headerRight: (
@@ -43,10 +40,10 @@ const navigationOptions = ({ navigation }) => {
             <TouchableHighlight
             onPress={() => navigation.navigate('Home')}
             >
-            <Image
-            style={{width: 70, height: 40, padding:2}}
-            source={require('./assets/apex-legends-logo-white.png')} 
-            />
+                <Image
+                style={{width: 70, height: 40, padding:2}}
+                source={require('./assets/apex-legends-logo-white.png')} 
+                />
             </TouchableHighlight>
 
         ),
@@ -68,8 +65,8 @@ const navigationOptions = ({ navigation }) => {
 }
 
 // MAKING THE STACK NAVIGATORS 
-// Stack fot the Home Page
 
+// Stack for the Home Page
 const HomeStack = createStackNavigator(
     {
         Home: {
@@ -123,13 +120,33 @@ const MapStack = createStackNavigator(
     }
 );
 
+// Making the Contact Screen Stack
+const ContactStack = createStackNavigator(
+    {
+        Contact: {
+            screen: ContactScreen
+        }
+    },
+    {
+        defaultNavigationOptions: navigationOptions,
+    }
+);
+
+//Finding the dimensions of the screen
+const WIDTH = Dimensions.get('window').width;
+// Configuring the drawer 
+const DrawerConfig = {
+    drawerWidth: WIDTH*0.75,
+}
+
 // MAKING THE DRAWER NAVIGATOR
 const DrawerNavigator = createDrawerNavigator(
     {
         Home: HomeStack,
         Legends: LegendsStack,
         Guns: GunStack,
-        Map: MapStack
+        Map: MapStack,
+        Contact: ContactStack,
     },
     DrawerConfig
 );
