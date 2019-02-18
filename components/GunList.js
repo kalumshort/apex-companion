@@ -36,9 +36,6 @@ class GunList extends Component {
                 style={styles.button}
                 >
                 <View style={styles.buttonContents}>
-                   {/* <Text style={styles.gunTypeText}>
-                       {item.guntype}
-                   </Text> */}
                    <Image
                        source={source}
                        style={styles.image}

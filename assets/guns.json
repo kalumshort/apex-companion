@@ -2,200 +2,200 @@
     {
         "guntype":"Pistols",
         "img":"https://img.rankedboost.com/wp-content/uploads/2019/02/Apex-Legends-Pistols.png",
-        "wingman":{
+        "gun1":{
             "name":"Wingman",
             "ammotype":"Heavy",
             "firerate":"Single",
             "magsize":"6",
             "bodydamage":"45",
             "headdamage":"90",
-            "img":""
+            "img":"https://i.ibb.co/0X3Y2wD/wing-2.jpg"
         },
-        "moz":{
-            "name":"Wingman",
+        "gun2":{
+            "name":"Mozanbique",
             "ammotype":"Shotgun",
             "firerate":"Single",
             "magsize":"3",
             "bodydamage":"45",
             "headdamage":"66",
-            "img":""
+            "img":"https://i.ibb.co/rQBDPpC/moza-2.jpg"
         },
-        "p2":{
+        "gun3":{
             "name":"P2020",
             "ammotype":"Light",
             "firerate":"Single",
             "magsize":"10",
             "bodydamage":"12",
             "headdamage":"18",
-            "img":""
+            "img":"https://i.ibb.co/yWHz2Qz/p2-2.jpg"
         },
-        "re":{
+        "gun4":{
             "name":"RE-45 Auto",
             "ammotype":"Heavy",
             "firerate":"Single",
             "magsize":"6",
             "bodydamage":"45",
             "headdamage":"90",
-            "img":""
+            "img":"https://i.ibb.co/R3FS6b1/re-2.jpg"
         }
 
     },
     {
         "guntype":"Submachine Gun",
         "img":"https://img.rankedboost.com/wp-content/uploads/2019/02/Apex-Legends-Sub-Machine-Guns.png",
-        "prow":{
+        "gun1":{
             "name":"Prowler",
             "ammotype":"Heavy",
             "firerate":"5 Burst",
             "magsize":"20",
             "bodydamage":"14",
             "headdamage":"21",
-            "img":""
+            "img":"https://i.ibb.co/rfxj7Nk/prow-2.jpg"
         },
-        "alt":{
+        "gun2":{
             "name":"Alternator",
             "ammotype":"Light",
             "firerate":"Auto",
             "magsize":"16",
             "bodydamage":"13",
             "headdamage":"19",
-            "img":""
+            "img":"https://i.ibb.co/GQfFStb/alt-2.jpg"
         },
-        "r9":{
+        "gun3":{
             "name":"R-99",
             "ammotype":"Light",
             "firerate":"Auto",
             "magsize":"18",
             "bodydamage":"12",
             "headdamage":"18",
-            "img":""
+            "img":"https://i.ibb.co/HBgxTBk/r99-2.jpg"
         }
 
     },
     {
         "guntype":"Assault Rifle",
         "img":"https://img.rankedboost.com/wp-content/uploads/2019/02/Apex-Legends-Assault-Rifles.png",
-        "hem":{
+        "gun1":{
             "name":"Hemlock AR",
             "ammotype":"Heavy",
             "firerate":"Burst/Single",
             "magsize":"18",
             "bodydamage":"18",
             "headdamage":"36",
-            "img":""
+            "img":"https://i.ibb.co/sb2fxDt/hemlock-2.jpg"
         },
-        "falt":{
+        "gun2":{
             "name":"VK-47 Flatline",
             "ammotype":"Heavy",
             "firerate":"Auto/Single",
             "magsize":"20",
             "bodydamage":"16",
             "headdamage":"32",
-            "img":""
+            "img":"https://i.ibb.co/529HVp1/flatline-2.jpg"
         },
-        "r3":{
+        "gun3":{
             "name":"R-301",
             "ammotype":"Light",
             "firerate":"Auto/Single",
             "magsize":"18",
             "bodydamage":"14",
             "headdamage":"28",
-            "img":""
+            "img":"https://i.ibb.co/jZfmZrR/r3-2.jpg"
         }
 
     },
     {
         "guntype":"Light Machine Gun",
         "img":"https://img.rankedboost.com/wp-content/uploads/2019/02/Apex-Legends-Light-Machine-Guns.png",
-        "spit":{
+        "gun1":{
             "name":"M600 Spitfire",
             "ammotype":"Heavy",
             "firerate":"Auto",
             "magsize":"35",
             "bodydamage":"20",
             "headdamage":"40",
-            "img":""
+            "img":"https://i.ibb.co/4sVp0xb/spit-2.jpg"
         },
-        "dev":{
+        "gun2":{
             "name":"Devotion",
             "ammotype":"Heavy",
             "firerate":"Auto",
             "magsize":"44",
             "bodydamage":"17",
             "headdamage":"34",
-            "img":""
+            "img":"https://i.ibb.co/zmZjZpq/dev-2.jpg"
         }
 
     },
     {
         "guntype":"Sniper Rifle",
         "img":"https://img.rankedboost.com/wp-content/uploads/2019/02/Apex-Legends-Sniper-Rifles.png",
-        "triple":{
+        "gun1":{
             "name":"Triple Take",
             "ammotype":"Energy",
             "firerate":"Single",
             "magsize":"5",
             "bodydamage":"69",
             "headdamage":"138",
-            "img":""
+            "img":"https://i.ibb.co/D1cKWz3/triple-2.jpg"
         },
-        "long":{
+        "gun2":{
             "name":"Longbow DMR",
             "ammotype":"Heavy",
             "firerate":"Single",
             "magsize":"5",
             "bodydamage":"55",
             "headdamage":"110",
-            "img":""
+            "img":"https://i.ibb.co/4ZHXbQM/long-2.jpg"
         },
-        "g7":{
+        "gun3":{
             "name":"G7 Scout",
             "ammotype":"Light",
             "firerate":"Single",
             "magsize":"10",
             "bodydamage":"30",
             "headdamage":"60",
-            "img":""
+            "img":"https://i.ibb.co/Ht3VNcQ/g7-2.jpg"
         },
-        "kraber":{
+        "gun4":{
             "name":"Kraber .50-Cal",
             "ammotype":"Special",
             "firerate":"Bolt-action",
             "magsize":"4",
             "bodydamage":"125",
             "headdamage":"250",
-            "img":""
+            "img":"https://i.ibb.co/Lz8khzk/kraber-2.jpg"
         }
     },
     {
         "guntype":"Shotgun",
         "img":"https://img.rankedboost.com/wp-content/uploads/2019/02/Apex-Legends-Shotguns.png",
-        "peace":{
+        "gun1":{
             "name":"Peacekeeper",
             "ammotype":"Shotgun",
             "firerate":"Pump-action",
             "magsize":"6",
             "bodydamage":"110",
             "headdamage":"165",
-            "img":""
+            "img":"https://i.ibb.co/ysJvndL/peacekeeper.jpg"
         },
-        "eva":{
+        "gun2":{
             "name":"EVA-8 Auto",
             "ammotype":"Shotgun",
             "firerate":"Auto",
             "magsize":"8",
             "bodydamage":"63",
             "headdamage":"90",
-            "img":""
+            "img":"https://i.ibb.co/SxYxfTv/eva-2.jpg"
         },
-        "mastiff":{
+        "gun3":{
             "name":"Mastiff",
             "ammotype":"Special",
             "firerate":"Single",
             "magsize":"4",
             "bodydamage":"144",
             "headdamage":"288",
-            "img":"https://img.rankedboost.com/wp-content/plugins/forge/basic-tier-list-images/apex-shotgun/Mastiff.jpg"
+            "img":"https://i.ibb.co/cgPgtXk/mastiff-2.jpg"
         }
 
     }
