@@ -16,7 +16,10 @@ import { Constants, WebBrowser } from 'expo';
 
 const GunDetail = ({item}) => {
 
-    const source1 = {uri: item.gun1.img}
+    // const source1 = {uri: item.gun1.img}
+    // const source2 = {uri: item.gun2.img}
+    // const source3 = {uri: item.gun3.img}
+    // const source4 = {uri: item.gun4.img}
 
     return(
         <>
@@ -24,33 +27,52 @@ const GunDetail = ({item}) => {
             <ScrollView>
                <View>
                    <Text style={styles.gunType}>{item.guntype}</Text>
-                   {/* <Image
 
-                       source={source}
-                       style={styles.image}
-                   /> */}
                    {item.gun1 ? 
-                   <>
-                    <Text style={styles.gunName}>{item.gun1.name}</Text>
-                    <Image source={source1}
+                    <>
+                        <Text style={styles.gunName}>{item.gun1.name}</Text>
+                        <Image 
+                            source={{uri: item.gun1.img}}
                             style={styles.image}
-                    />
+                        />
+                    </>
+                   :
+                   <Text></Text>
+                   }
+
+                   {item.gun2 ? 
+                   <>
+                        <Text style={styles.gunName}>{item.gun2.name}</Text>
+                        <Image
+                            source={{uri:item.gun2.img}}
+							style={styles.image}
+                        />
+                   </>
+
+                   :
+                   <Text></Text>
+                   }
+
+                   {item.gun3 ? 
+                   <>
+                        <Text style={styles.gunName}>{item.gun3.name}</Text>
+                        <Image
+                            source={{uri:item.gun3.img}}
+							style={styles.image}
+                        />
                    </>
                    :
                    <Text></Text>
                    }
-                   {item.gun2 ? 
-                   <Text style={styles.gunName}>{item.gun2.name}</Text>
-                   :
-                   <Text></Text>
-                   }
-                   {item.gun3 ? 
-                   <Text style={styles.gunName}>{item.gun3.name}</Text>
-                   :
-                   <Text></Text>
-                   }
+
                    {item.gun4 ? 
-                   <Text style={styles.gunName}>{item.gun4.name}</Text>
+                   <>
+						<Text style={styles.gunName}>{item.gun4.name}</Text>
+						<Image
+							source={{uri:item.gun4.img}}
+							style={styles.image}
+						/>
+                   </>
                    :
                    <Text></Text>
                    }
