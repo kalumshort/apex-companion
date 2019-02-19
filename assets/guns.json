@@ -41,7 +41,7 @@
 
     },
     {
-        "guntype":"Submachine Gun",
+        "guntype":"Submachine Guns",
         "img":"https://img.rankedboost.com/wp-content/uploads/2019/02/Apex-Legends-Sub-Machine-Guns.png",
         "gun1":{
             "name":"Prowler",
@@ -73,7 +73,7 @@
 
     },
     {
-        "guntype":"Assault Rifle",
+        "guntype":"Assault Rifles",
         "img":"https://img.rankedboost.com/wp-content/uploads/2019/02/Apex-Legends-Assault-Rifles.png",
         "gun1":{
             "name":"Hemlock AR",
@@ -105,7 +105,7 @@
 
     },
     {
-        "guntype":"Light Machine Gun",
+        "guntype":"Light Machine Guns",
         "img":"https://img.rankedboost.com/wp-content/uploads/2019/02/Apex-Legends-Light-Machine-Guns.png",
         "gun1":{
             "name":"M600 Spitfire",
@@ -128,7 +128,7 @@
 
     },
     {
-        "guntype":"Sniper Rifle",
+        "guntype":"Sniper Rifles",
         "img":"https://img.rankedboost.com/wp-content/uploads/2019/02/Apex-Legends-Sniper-Rifles.png",
         "gun1":{
             "name":"Triple Take",
@@ -168,7 +168,7 @@
         }
     },
     {
-        "guntype":"Shotgun",
+        "guntype":"Shotguns",
         "img":"https://img.rankedboost.com/wp-content/uploads/2019/02/Apex-Legends-Shotguns.png",
         "gun1":{
             "name":"Peacekeeper",
