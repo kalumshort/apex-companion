@@ -101,6 +101,15 @@
             "bodydamage":"14",
             "headdamage":"28",
             "img":"https://i.ibb.co/jZfmZrR/r3-2.jpg"
+        },
+        "gun4":{
+            "name":"Havok",
+            "ammotype":"Energy",
+            "firerate":"Auto/Single",
+            "magsize":"25",
+            "bodydamage":"18",
+            "headdamage":"36",
+            "img":"https://i.ibb.co/jZfmZrR/r3-2.jpg"
         }
 
     },

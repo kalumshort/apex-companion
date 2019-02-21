@@ -7,7 +7,8 @@ import {
     Image, 
     TouchableHighlight, 
     ScrollView,
-    Dimensions
+	Dimensions,
+	Platform
      } from 'react-native';
 
 import { Constants, WebBrowser } from 'expo';
@@ -32,11 +33,20 @@ const GunDetail = ({item}) => {
 									style={styles.image}
 								/>
 								<View style={styles.textContainer}>
-									<Text style={styles.text}>Ammo Type: {item.gun1.ammotype}</Text>
-									<Text style={styles.text}>Fire-Rate: {item.gun1.firerate}</Text>
-									<Text style={styles.text}>Mag-Size: {item.gun1.magsize}</Text>
-									<Text style={styles.text}>Head Damage: {item.gun1.headdamage}</Text>
-									<Text style={styles.text}>Body Damage: {item.gun1.bodydamage}</Text>
+									<View style={styles.textLabel}>
+										<Text style={styles.text}>Ammo Type:</Text>
+										<Text style={styles.text}>Fire-Rate:</Text>
+										<Text style={styles.text}>Mag-Size:</Text>
+										<Text style={styles.text}>Head Damage:</Text>
+										<Text style={styles.text}>Body Damage:</Text>
+									</View>
+									<View style={styles.textItems}>
+										<Text style={styles.textItem}>{item.gun1.ammotype}</Text>
+										<Text style={styles.textItem}>{item.gun1.firerate}</Text>
+										<Text style={styles.textItem}>{item.gun1.magsize}</Text>
+										<Text style={styles.textItem}>{item.gun1.headdamage}</Text>
+										<Text style={styles.textItem}>{item.gun1.bodydamage}</Text>
+									</View>
 								</View>
 							</View>
 						</>
@@ -53,11 +63,20 @@ const GunDetail = ({item}) => {
 									style={styles.image}
 								/>
 								<View style={styles.textContainer}>
-									<Text style={styles.text}>Ammo Type: {item.gun2.ammotype}</Text>
-									<Text style={styles.text}>Fire-Rate: {item.gun2.firerate}</Text>
-									<Text style={styles.text}>Mag-Size: {item.gun2.magsize}</Text>
-									<Text style={styles.text}>Head Damage: {item.gun2.headdamage}</Text>
-									<Text style={styles.text}>Body Damage: {item.gun2.bodydamage}</Text>
+									<View style={styles.textLabel}>
+										<Text style={styles.text}>Ammo Type:</Text>
+										<Text style={styles.text}>Fire-Rate:</Text>
+										<Text style={styles.text}>Mag-Size:</Text>
+										<Text style={styles.text}>Head Damage:</Text>
+										<Text style={styles.text}>Body Damage:</Text>
+									</View>
+									<View style={styles.textItems}>
+										<Text style={styles.textItem}>{item.gun2.ammotype}</Text>
+										<Text style={styles.textItem}>{item.gun2.firerate}</Text>
+										<Text style={styles.textItem}>{item.gun2.magsize}</Text>
+										<Text style={styles.textItem}>{item.gun2.headdamage}</Text>
+										<Text style={styles.textItem}>{item.gun2.bodydamage}</Text>
+									</View>
 								</View>
 							</View>
 						</>
@@ -74,12 +93,21 @@ const GunDetail = ({item}) => {
 										style={styles.image}
 									/>
 									<View style={styles.textContainer}>
-										<Text style={styles.text}>Ammo Type: {item.gun3.ammotype}</Text>
-										<Text style={styles.text}>Fire-Rate: {item.gun3.firerate}</Text>
-										<Text style={styles.text}>Mag-Size: {item.gun3.magsize}</Text>
-										<Text style={styles.text}>Head Damage: {item.gun3.headdamage}</Text>
-									<Text style={styles.text}>Body Damage: {item.gun3.bodydamage}</Text>
-								</View>
+										<View style={styles.textLabel}>
+											<Text style={styles.text}>Ammo Type:</Text>
+											<Text style={styles.text}>Fire-Rate:</Text>
+											<Text style={styles.text}>Mag-Size:</Text>
+											<Text style={styles.text}>Head Damage:</Text>
+											<Text style={styles.text}>Body Damage:</Text>
+										</View>
+										<View style={styles.textItems}>
+											<Text style={styles.textItem}>{item.gun3.ammotype}</Text>
+											<Text style={styles.textItem}>{item.gun3.firerate}</Text>
+											<Text style={styles.textItem}>{item.gun3.magsize}</Text>
+											<Text style={styles.textItem}>{item.gun3.headdamage}</Text>
+											<Text style={styles.textItem}>{item.gun3.bodydamage}</Text>
+										</View>
+									</View>
 								</View>
 						</>
                    :
@@ -89,18 +117,29 @@ const GunDetail = ({item}) => {
                    {item.gun4 ? 
 						<>
 								<View style={styles.gunContainer}>
-									<Text style={styles.gunName}>{item.gun4.name}</Text>
-									<Image
-										source={{uri:item.gun4.img}}
-										style={styles.image}
-									/>
-									<View style={styles.textContainer}>
-										<Text style={styles.text}>Ammo Type: {item.gun4.ammotype}</Text>
-										<Text style={styles.text}>Fire-Rate: {item.gun4.firerate}</Text>
-										<Text style={styles.text}>Mag-Size: {item.gun4.magsize}</Text>
-										<Text style={styles.text}>Head Damage: {item.gun4.headdamage}</Text>
-									<Text style={styles.text}>Body Damage: {item.gun4.bodydamage}</Text>
-								</View>
+									<View style={styles.gunContainerInner}>
+										<Text style={styles.gunName}>{item.gun4.name}</Text>
+										<Image
+											source={{uri:item.gun4.img}}
+											style={styles.image}
+										/>
+										<View style={styles.textContainer}>
+											<View style={styles.textLabel}>
+												<Text style={styles.text}>Ammo Type:</Text>
+												<Text style={styles.text}>Fire-Rate:</Text>
+												<Text style={styles.text}>Mag-Size:</Text>
+												<Text style={styles.text}>Head Damage:</Text>
+												<Text style={styles.text}>Body Damage:</Text>
+											</View>
+											<View style={styles.textItems}>
+												<Text style={styles.textItem}>{item.gun4.ammotype}</Text>
+												<Text style={styles.textItem}>{item.gun4.firerate}</Text>
+												<Text style={styles.textItem}>{item.gun4.magsize}</Text>
+												<Text style={styles.textItem}>{item.gun4.headdamage}</Text>
+												<Text style={styles.textItem}>{item.gun4.bodydamage}</Text>
+											</View>
+										</View>
+									</View>
 								</View>
 						</>
                    :
@@ -122,14 +161,27 @@ const HEIGHT = Dimensions.get('window').height;
 // Styling for the page
   const styles = StyleSheet.create({
     container: {
-        backgroundColor: 'black',
+        backgroundColor: 'white',
         flex: 1,
 	},
 	gunContainer: {
-		
+		backgroundColor: '#282727',
+		alignItems: 'center',
+		padding: 10,
+        margin: 10,
+        borderRadius: 4,
+        borderWidth: 0,
+        borderColor: 'transparent',
+		elevation: 10,
+		shadowOpacity: 1,
+
+	},
+	gunContainerInner: {
+		flex: 1,
+
 	},
     image: {
-        width: WIDTH*1,
+        width: WIDTH*0.9,
 		height: HEIGHT*0.2,
     },
     gunName: {
@@ -139,12 +191,28 @@ const HEIGHT = Dimensions.get('window').height;
 		fontWeight: '100',
 		fontStyle: 'italic',
 		marginTop: 20,
+		marginBottom:20,
 	},
 	textContainer: {
-		alignItems:'center',
+		flexDirection: 'row',
+		justifyContent: 'space-evenly',
+		marginTop:30,
+		marginBottom: 30,
 	},
 	text: {
 		color: 'white',
+		fontSize: 20,
+	},
+	textItem: {
+		color: 'white',
+		fontSize: 20,
+		fontStyle:'italic',
+	},
+	textLabel: {
+		alignItems: 'center',
+	},
+	textItems: {
+		alignItems: 'center',
 	},
     
 });
