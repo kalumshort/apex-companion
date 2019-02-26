@@ -26,7 +26,8 @@ import MapScreen from './containers/MapPageScreen';
 import ContactScreen from './containers/ContactScreen';
 // Importing the menu button component
 import MenuButton from './components/MenuButton';
-
+// Importing the drawer component
+import MenuDrawer from './components/MenuDrawer';
 
 // Styling the stack navigators
 const navigationOptions = ({ navigation }) => {
@@ -137,6 +138,11 @@ const WIDTH = Dimensions.get('window').width;
 // Configuring the drawer 
 const DrawerConfig = {
     drawerWidth: WIDTH*0.75,
+    drawerType: 'back',
+    contentComponent : ({ navigation }) => {
+        return(<MenuDrawer navigation={navigation}/>)
+    }
+
 }
 
 // MAKING THE DRAWER NAVIGATOR

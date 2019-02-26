@@ -57,7 +57,7 @@ class GunList extends Component {
             <FlatList  
             data={guns} 
             keyExtractor={this.keyExtractor}
-            ItemSeparatorComponent={this.renderSeparator}
+            // ItemSeparatorComponent={this.renderSeparator}
             renderItem={this.renderItem} 
             />
         );

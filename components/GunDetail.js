@@ -14,9 +14,15 @@ import {
 import { Constants, WebBrowser } from 'expo';
 
 
-
+handleAmmoType = () => {
+	if(x = 'Heavy'){
+		<Text>{item.x.ammotype}</Text>
+	}
+}
 
 const GunDetail = ({item}) => {
+
+	
 
     return(
         <>
@@ -41,7 +47,19 @@ const GunDetail = ({item}) => {
 										<Text style={styles.text}>Body Damage:</Text>
 									</View>
 									<View style={styles.textItems}>
-										<Text style={styles.textItem}>{item.gun1.ammotype}</Text>
+										{
+											  (item.gun1.ammotype) == 'Heavy' ?
+											<Text style={styles.ammoHeavy}>{item.gun1.ammotype}</Text>
+											: (item.gun1.ammotype) == 'Energy' ?
+											<Text style={styles.ammoEnergy}>{item.gun1.ammotype}</Text>
+											: (item.gun1.ammotype) == 'Light' ?
+											<Text style={styles.ammoLight}>{item.gun1.ammotype}</Text>
+											: (item.gun1.ammotype) == 'Shotgun' ?
+											<Text style={styles.ammoShotgun}>{item.gun1.ammotype}</Text>
+											: (item.gun1.ammotype) == 'Special' ?
+											<Text style={styles.ammoSpecial}>{item.gun1.ammotype}</Text>
+											:<Text></Text>
+										}
 										<Text style={styles.textItem}>{item.gun1.firerate}</Text>
 										<Text style={styles.textItem}>{item.gun1.magsize}</Text>
 										<Text style={styles.textItem}>{item.gun1.headdamage}</Text>
@@ -71,7 +89,19 @@ const GunDetail = ({item}) => {
 										<Text style={styles.text}>Body Damage:</Text>
 									</View>
 									<View style={styles.textItems}>
-										<Text style={styles.textItem}>{item.gun2.ammotype}</Text>
+									{
+											(item.gun2.ammotype) == 'Heavy' ?
+											<Text style={styles.ammoHeavy}>{item.gun2.ammotype}</Text>
+											: (item.gun2.ammotype) == 'Energy' ?
+											<Text style={styles.ammoEnergy}>{item.gun2.ammotype}</Text>
+											: (item.gun2.ammotype) == 'Light' ?
+											<Text style={styles.ammoLight}>{item.gun2.ammotype}</Text>
+											: (item.gun2.ammotype) == 'Shotgun' ?
+											<Text style={styles.ammoShotgun}>{item.gun2.ammotype}</Text>
+											: (item.gun2.ammotype) == 'Special' ?
+											<Text style={styles.ammoSpecial}>{item.gun2.ammotype}</Text>
+											:<Text></Text>
+										}
 										<Text style={styles.textItem}>{item.gun2.firerate}</Text>
 										<Text style={styles.textItem}>{item.gun2.magsize}</Text>
 										<Text style={styles.textItem}>{item.gun2.headdamage}</Text>
@@ -101,7 +131,19 @@ const GunDetail = ({item}) => {
 											<Text style={styles.text}>Body Damage:</Text>
 										</View>
 										<View style={styles.textItems}>
-											<Text style={styles.textItem}>{item.gun3.ammotype}</Text>
+										{
+											(item.gun3.ammotype) == 'Heavy'?
+											<Text style={styles.ammoHeavy}>{item.gun3.ammotype}</Text>
+											: (item.gun3.ammotype) == 'Energy' ?
+											<Text style={styles.ammoEnergy}>{item.gun3.ammotype}</Text>
+											: (item.gun3.ammotype) == 'Light' ?
+											<Text style={styles.ammoLight}>{item.gun3.ammotype}</Text>
+											: (item.gun3.ammotype) == 'Shotgun' ?
+											<Text style={styles.ammoShotgun}>{item.gun3.ammotype}</Text>
+											: (item.gun3.ammotype) == 'Special' ?
+											<Text style={styles.ammoSpecial}>{item.gun3.ammotype}</Text>
+											:<Text></Text>
+										}
 											<Text style={styles.textItem}>{item.gun3.firerate}</Text>
 											<Text style={styles.textItem}>{item.gun3.magsize}</Text>
 											<Text style={styles.textItem}>{item.gun3.headdamage}</Text>
@@ -132,7 +174,19 @@ const GunDetail = ({item}) => {
 												<Text style={styles.text}>Body Damage:</Text>
 											</View>
 											<View style={styles.textItems}>
-												<Text style={styles.textItem}>{item.gun4.ammotype}</Text>
+												{
+													(item.gun4.ammotype) == 'Heavy'?
+													<Text style={styles.ammoHeavy}>{item.gun4.ammotype}</Text>
+													: (item.gun4.ammotype) == 'Energy' ?
+													<Text style={styles.ammoEnergy}>{item.gun4.ammotype}</Text>
+													: (item.gun4.ammotype) == 'Light' ?
+													<Text style={styles.ammoLight}>{item.gun4.ammotype}</Text>
+													: (item.gun4.ammotype) == 'Shotgun' ?
+													<Text style={styles.ammoShotgun}>{item.gun4.ammotype}</Text>
+													: (item.gun4.ammotype) == 'Special' ?
+													<Text style={styles.ammoSpecial}>{item.gun4.ammotype}</Text>
+													:<Text></Text>
+												}
 												<Text style={styles.textItem}>{item.gun4.firerate}</Text>
 												<Text style={styles.textItem}>{item.gun4.magsize}</Text>
 												<Text style={styles.textItem}>{item.gun4.headdamage}</Text>
@@ -161,7 +215,7 @@ const HEIGHT = Dimensions.get('window').height;
 // Styling for the page
   const styles = StyleSheet.create({
     container: {
-        backgroundColor: 'white',
+        backgroundColor: 'black',
         flex: 1,
 	},
 	gunContainer: {
@@ -169,11 +223,9 @@ const HEIGHT = Dimensions.get('window').height;
 		alignItems: 'center',
 		padding: 10,
         margin: 10,
-        borderRadius: 4,
-        borderWidth: 0,
-        borderColor: 'transparent',
-		elevation: 10,
-		shadowOpacity: 1,
+        borderRadius: 10,
+        borderWidth: 1,
+        borderColor: 'red',
 
 	},
 	gunContainerInner: {
@@ -213,6 +265,31 @@ const HEIGHT = Dimensions.get('window').height;
 	},
 	textItems: {
 		alignItems: 'center',
+	},
+	ammoHeavy: {
+		color: 'lightblue',
+		fontSize: 20,
+		fontStyle:'italic',
+	},
+	ammoLight: {
+		color: 'orange',
+		fontSize: 20,
+		fontStyle:'italic',
+	},
+	ammoEnergy: {
+		color: 'lightgreen',
+		fontSize: 20,
+		fontStyle:'italic',
+	},
+	ammoShotgun: {
+		color: 'red',
+		fontSize: 20,
+		fontStyle:'italic',
+	},
+	ammoSpecial: {
+		color: '#FFD700',
+		fontSize: 20,
+		fontStyle:'italic',
 	},
     
 });
