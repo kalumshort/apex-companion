@@ -6,7 +6,8 @@ import {
     Platform,
     Dimensions,
     StyleSheet,
-    TouchableOpacity
+    TouchableOpacity,
+    Image,
 } from 'react-native';
 
 import { 
@@ -32,48 +33,58 @@ export default class MenuDrawer extends React.Component {
         return(
             <View style={styles.container}>
                 <View style={styles.drawerHeader}>
-
+                    <Image style={styles.headerImage} source={{uri:'https://media.contentapi.ea.com/content/dam/apex-legends/common/legend-wallpapers/apex-concept-art-wallpaper-caustic.png'}}/>
                 </View>
                 <View style={styles.linksContainer}>
-                    <View style={styles.Links}>
-                        <MaterialCommunityIcons
-                            name="home"
-                            size={37}
-                            style={styles.icon}
-                        />
-                         {this.navLink('Home', 'Home')}
+                    <View>
+                        <TouchableOpacity style={styles.Links} onPress={() => this.props.navigation.navigate('Home')}>
+                            <MaterialCommunityIcons
+                                name="home"
+                                size={37}
+                                style={styles.icon}
+                            />
+                            <Text style={styles.link}>Home</Text>
+                         </TouchableOpacity>
                     </View>
-                    <View style={styles.Links}>
-                        <MaterialCommunityIcons
-                            name="crown"
-                            size={37}
-                            style={styles.icon}
-                        />
-                        {this.navLink('Legends', 'Legends')}
+                    <View>
+                        <TouchableOpacity style={styles.Links} onPress={() => this.props.navigation.navigate('Legends')}>
+                            <MaterialCommunityIcons
+                                name="crown"
+                                size={37}
+                                style={styles.icon}
+                            />
+                            <Text style={styles.link}>Legends</Text>
+                        </TouchableOpacity>
                     </View>
-                    <View style={styles.Links}>
-                        <MaterialCommunityIcons
-                            name="pistol"
-                            size={37}
-                            style={styles.icon}
-                        />
-                        {this.navLink('Guns', 'Guns')}
+                    <View>
+                        <TouchableOpacity style={styles.Links} onPress={() => this.props.navigation.navigate('Guns')}>
+                            <MaterialCommunityIcons
+                                name="pistol"
+                                size={37}
+                                style={styles.icon}
+                            />
+                            <Text style={styles.link}>Weapons</Text>
+                        </TouchableOpacity>
                     </View>
-                    <View style={styles.Links}>
-                        <MaterialCommunityIcons
-                            name="map-legend"
-                            size={37}
-                            style={styles.icon}
-                        />
-                        {this.navLink('Map', 'Map')}
+                    <View>
+                        <TouchableOpacity style={styles.Links} onPress={() => this.props.navigation.navigate('Map')}>
+                            <MaterialCommunityIcons
+                                name="map-legend"
+                                size={37}
+                                style={styles.icon}
+                            />
+                            <Text style={styles.link}>Map</Text>
+                        </TouchableOpacity>
                     </View>
-                    <View style={styles.Links}>
-                        <MaterialCommunityIcons
-                            name="message-text"
-                            size={37}
-                            style={styles.icon}
-                        />
-                        {this.navLink('Contact', 'Contact')}
+                    <View>
+                        <TouchableOpacity style={styles.Links} onPress={() => this.props.navigation.navigate('Contact')}>
+                            <MaterialCommunityIcons
+                                name="message-text"
+                                size={37}
+                                style={styles.icon}
+                            />
+                            <Text style={styles.link}>Contact</Text>
+                        </TouchableOpacity>
                     </View>
                 </View>
             </View>
@@ -91,6 +102,9 @@ const styles = StyleSheet.create({
         backgroundColor: 'red',
 
     },
+    headerImage: {
+        flex: 1,
+    },
     linksContainer: {
 
     },
@@ -101,6 +115,7 @@ const styles = StyleSheet.create({
     Links: {
         flexDirection: 'row',
         alignItems: 'center',
+
     },
     link: {
         color: 'white',
