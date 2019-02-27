@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import HomePage from '../components/Hompage';
+import {
+    Alert
+}from 'react-native';
 
 class MapScreen extends Component {
     constructor(props) {
@@ -21,7 +24,17 @@ class MapScreen extends Component {
     };
     handleMapPress = () => {
         this.props.navigation.navigate('Map');
-    }
+    };
+    handleAlertPress = () => {
+        Alert.alert(
+            'Sorry',
+            'Page under construction',
+            [
+              {text: 'Ok'},
+            ],
+            {cancelable: false},
+          );
+    };
     render() {
         return(
             <>
@@ -29,6 +42,7 @@ class MapScreen extends Component {
             handleLegendsPress={this.handleLegendsPress}
             handleGunsPress={this.handleGunsPress}
             handleMapPress={this.handleMapPress}
+            handleAlertPress={this.handleAlertPress}
             />
             </>
         )

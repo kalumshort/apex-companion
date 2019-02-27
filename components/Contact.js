@@ -77,8 +77,7 @@ const styles = StyleSheet.create({
     },
     titleContainer: {
         width: WIDTH*1,
-        borderBottomWidth: 1,
-        borderColor: 'white',
+     
     },
     title:{
         color: 'white',
@@ -90,7 +89,7 @@ const styles = StyleSheet.create({
     inqureContainer: {
         alignItems: 'center',
         width: WIDTH*1,
-        borderBottomWidth: 1,
+        borderTopWidth: 1,
         borderColor: 'white',
         marginTop: 30,
      
@@ -112,7 +111,7 @@ const styles = StyleSheet.create({
         marginTop: 30,
         alignItems: 'center',
         width: WIDTH*1,
-        borderBottomWidth: 1,
+        borderTopWidth: 1,
         borderColor: 'white',
     },
     helpText: {

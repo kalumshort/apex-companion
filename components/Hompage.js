@@ -14,6 +14,7 @@ class HomePage extends Component {
     constructor(props){
         super(props);
     }
+
     render() {
         return(
             <>
@@ -55,7 +56,7 @@ class HomePage extends Component {
 
                      {/* VIEW SEASONS */}
                      <TouchableHighlight
-                    // onPress={this.props.handleMapPress}
+                    onPress={this.props.handleAlertPress}
                     >
                         <ImageBackground
                         style={styles.itemImage}
