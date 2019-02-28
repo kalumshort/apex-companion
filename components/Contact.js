@@ -31,10 +31,10 @@ class Contact extends Component {
                     </View>
                     <View style={styles.inqureContainer}>
                         <Text style={styles.inquireText}>To inquire about my work please E-Mail: </Text>
-                        <Text style={styles.inquireEmai}>kalumdarcyshort@outlook.com</Text>
+                        <Text style={styles.inquireEmai}>kalumdarcy@outlook.com</Text>
                     </View>
                     <View style={styles.helpContainer}>
-                        <Text style={styles.helpText}>To send me surgestions about content you want adding to this app please E-Mial </Text>
+                        <Text style={styles.helpText}>To send me surgestions about content you want adding to this app please E-Mail </Text>
                         <Text style={styles.helpEmail}>kalumapexapp.outlook.com</Text>
                     </View>
                 </View>

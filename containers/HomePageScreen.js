@@ -27,7 +27,7 @@ class MapScreen extends Component {
     };
     handleAlertPress = () => {
         Alert.alert(
-            'Sorry',
+            'Apologies',
             'Page under construction',
             [
               {text: 'Ok'},

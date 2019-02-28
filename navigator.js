@@ -43,7 +43,7 @@ const navigationOptions = ({ navigation }) => {
             >
                 <Image
                 style={{width: 70, height: 40, padding:2}}
-                source={require('./assets/apex-legends-logo-white.png')} 
+                source={require('./assets/apex-legends-logo-red.png')} 
                 />
             </TouchableHighlight>
 
