@@ -13,6 +13,7 @@ import {
 import { 
     Ionicons,
     MaterialCommunityIcons,
+    FontAwesome,
 
  } from '@expo/vector-icons';
 
@@ -57,6 +58,16 @@ export default class MenuDrawer extends React.Component {
                                 style={styles.icon}
                             />
                             <Text style={styles.link}>Weapons</Text>
+                        </TouchableOpacity>
+                    </View>
+                    <View>
+                        <TouchableOpacity style={styles.Links} onPress={() => this.props.navigation.navigate('Attachments')}>
+                            <FontAwesome
+                                name="crosshairs"
+                                size={37}
+                                style={styles.icon}
+                            />
+                            <Text style={styles.link}>Attachments</Text>
                         </TouchableOpacity>
                     </View>
                     <View>

@@ -24,6 +24,8 @@ import GunDetailScreen from './containers/GunDetailScreen';
 import MapScreen from './containers/MapPageScreen';
 // Importing the Contact Screen
 import ContactScreen from './containers/ContactScreen';
+// Importing the attachments screen
+import AttachmentsScreen from './containers/AttachmentsScreen';
 // Importing the menu button component
 import MenuButton from './components/MenuButton';
 // Importing the drawer component
@@ -121,6 +123,17 @@ const MapStack = createStackNavigator(
     }
 );
 
+// Making the attachments Screen Stack 
+const AttachmentsStack = createStackNavigator(
+    {
+        Attachments: {
+            screen: AttachmentsScreen
+        }
+    },
+    {
+        defaultNavigationOptions: navigationOptions,
+    }
+)
 // Making the Contact Screen Stack
 const ContactStack = createStackNavigator(
     {
@@ -151,6 +164,7 @@ const DrawerNavigator = createDrawerNavigator(
         Home: HomeStack,
         Legends: LegendsStack,
         Guns: GunStack,
+        Attachments: AttachmentsStack,
         Map: MapStack,
         Contact: ContactStack,
     },

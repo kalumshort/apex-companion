@@ -32,12 +32,11 @@ class Contact extends Component {
                     </View>
                     <View style={styles.inqureContainer}>
                         <Text style={styles.inquireText}>To inquire about my work please E-Mail: </Text>
-                        <Text style={styles.inquireEmai}>kalumdarcy@outlook.com</Text>
                         <Button onPress={() => Linking.openURL('mailto:kalumdarcy@outlook.com') }
                             title="kalumdarcy@outlook.com" />
                     </View>
                     <View style={styles.helpContainer}>
-                        <Text style={styles.helpText}>To send me surgestions about content you want adding to this app please E-Mail </Text>
+                        <Text style={styles.helpText}>To send suggestions about content you want adding to this app please E-Mail </Text>
                         <Button onPress={() => Linking.openURL('mailto:kalumapexapp.outlook.com') }
                             title="kalumapexapp.outlook.com" />
                     </View>
@@ -132,7 +131,8 @@ const styles = StyleSheet.create({
         fontWeight: '900',
     },
     follow: {
-
+        borderTopWidth: 1,
+        borderColor: 'white',
     },
     socials: { 
         flexDirection: 'row',
