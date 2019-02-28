@@ -43,6 +43,17 @@ class HomePage extends Component {
                         </ImageBackground>
                     </TouchableHighlight>
 
+                    {/* VIEW ATTACHMENTS */}
+                    <TouchableHighlight
+                    onPress={this.props.handleAttachmentsPress}
+                    >
+                        <ImageBackground
+                        style={styles.itemImage}
+                        source={{uri:"https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/apex-grid-tile-about-explore-more-community.jpg"}}>
+                            <Text style={styles.itemText}>View Attachments</Text>
+                        </ImageBackground>
+                    </TouchableHighlight>
+
                     {/* VIEW MAP */}
                     <TouchableHighlight
                     onPress={this.props.handleMapPress}
