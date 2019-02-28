@@ -8,7 +8,8 @@ import {
         ImageBackground,
         Dimensions,
         ScrollView,
-        Linking
+        Linking,
+        Button
         } from 'react-native';
 import { 
     Ionicons,
@@ -32,10 +33,13 @@ class Contact extends Component {
                     <View style={styles.inqureContainer}>
                         <Text style={styles.inquireText}>To inquire about my work please E-Mail: </Text>
                         <Text style={styles.inquireEmai}>kalumdarcy@outlook.com</Text>
+                        <Button onPress={() => Linking.openURL('mailto:kalumdarcy@outlook.com') }
+                            title="kalumdarcy@outlook.com" />
                     </View>
                     <View style={styles.helpContainer}>
                         <Text style={styles.helpText}>To send me surgestions about content you want adding to this app please E-Mail </Text>
-                        <Text style={styles.helpEmail}>kalumapexapp.outlook.com</Text>
+                        <Button onPress={() => Linking.openURL('mailto:kalumapexapp.outlook.com') }
+                            title="kalumapexapp.outlook.com" />
                     </View>
                 </View>
                 <View style={styles.follow}>
