@@ -125,9 +125,10 @@ class AttachmentsPage extends Component {
                                 </View>
                             </View>
                         </View>
-
+                        {/* HOP-UP Attachments */}
                         <View style={styles.hopcontainer}>
                             <Text style={styles.attTitle}>Hop-Up Attachments</Text>
+                             {/* Skullpiercer */}
                             <View style={styles.hopup}>
                                 <Text style={styles.hopupName}>Skullpiercer Rifling</Text>
                                 <Text style={styles.hopupEffectTitle}>Effect</Text>
@@ -135,20 +136,23 @@ class AttachmentsPage extends Component {
                                 <Text style={styles.hopupAppTitle}>Applicable Weapons</Text>
                                 <Text style={styles.hopupAppWeapons}>Wingman, Longbow</Text>
                             </View>
+                            {/* Selectfire */}
                             <View style={styles.hopup}>
-                                <Text style={styles.hopupName}>Selecfire Receiver</Text>
+                                <Text style={styles.hopupName}>Selectfire Receiver</Text>
                                 <Text style={styles.hopupEffectTitle}>Effect</Text>
                                 <Text style={styles.hopupEffect}>Switch between fire modes</Text>
                                 <Text style={styles.hopupAppTitle}>Applicable Weapons</Text>
                                 <Text style={styles.hopupAppWeapons}>Prowler, Havok</Text>
                             </View>
+                            {/* Precision */}
                             <View style={styles.hopup}>
                                 <Text style={styles.hopupName}>Precision Choke</Text>
                                 <Text style={styles.hopupEffectTitle}>Effect</Text>
-                                <Text style={styles.hopupEffect}>Reduces the pejectile spread</Text>
+                                <Text style={styles.hopupEffect}>Reduces the projectile spread</Text>
                                 <Text style={styles.hopupAppTitle}>Applicable Weapons</Text>
                                 <Text style={styles.hopupAppWeapons}>Peacekeeper, Triple Take</Text>
                             </View>
+                            {/* Turbocharger */}
                             <View style={styles.hopup}>
                                 <Text style={styles.hopupName}>Turbocharger</Text>
                                 <Text style={styles.hopupEffectTitle}>Effect</Text>
@@ -263,26 +267,37 @@ const styles = StyleSheet.create({
         color: 'white',
         textAlign: 'center',
         fontSize: 20,
+        fontWeight: '900',
 
     },
     hopupEffectTitle: {
         color: 'white', 
         textAlign: 'center',
+        fontSize: 15,
+        fontWeight: '900',
+        marginTop: 10,
 
     }, 
     hopupEffect: {
-        color: 'white',
+        color: '#E20808',
         textAlign: 'center',
+        fontStyle: 'italic',
+
 
     },
     hopupAppTitle: {
         color: 'white',
         textAlign: 'center',
+        fontSize: 15,
+        fontWeight: '900',
+        marginTop:10,
+
 
     },
     hopupAppWeapons: {
         color: 'white',
         textAlign: 'center',
+        fontStyle: 'italic',
 
     }, 
 })
