@@ -25,100 +25,140 @@ class AttachmentsPage extends Component {
         return(
             <>
             <View style={styles.container}>
-                <View style={styles.attachments}>
-                    <Text style={styles.attTitle}>Attachments</Text>
-                    <View style={styles.attachment}>
-                        <Text style={styles.attName}>Magazine</Text>
-                        <Text style={styles.attBracket}>(Heavy & Light)</Text>
-                        <View style={styles.attTable}>
-                            <View style={styles.rarity}>
-                                <Text style={styles.common}>Common</Text>
-                                <Text style={styles.rare}>Rare</Text>
-                                <Text style={styles.epic}>Epic</Text>
-                            </View>
-                            <View style={styles.benefits}>
-                                <View style={styles.benefit}>
-                                    <Text style={styles.benefitText}>+ Ammo Capacity</Text>
+                <ScrollView>
+                    {/* Attachments for the guns */}
+                    <View style={styles.attachments}>
+                        {/* Title for the attachments */}
+                        <Text style={styles.attTitle}>Attachments</Text>
+                        {/* Each Attachment */}
+                        <View style={styles.attachment}>
+                            <Text style={styles.attName}>Magazine</Text>
+                            <Text style={styles.attBracket}>(Heavy & Light)</Text>
+                            <View style={styles.attTable}>
+                                <View style={styles.rarity}>
+                                    <Text style={styles.common}>Common</Text>
+                                    <Text style={styles.rare}>Rare</Text>
+                                    <Text style={styles.epic}>Epic</Text>
                                 </View>
-                                <View style={styles.benefit}>
-                                    <Text style={styles.benefitText}>++ Ammo Capacity</Text>
-                                    <Text style={styles.benefitText}>+ Fast Reloads</Text>
-                                </View>
-                                <View style={styles.benefit}>
-                                    <Text style={styles.benefitText}>+++ Ammo Capacity</Text>
-                                    <Text style={styles.benefitText}>++ Fast Reloads</Text>
-                                </View>
-                            </View>
-                        </View>
-                    </View>
-                    <View style={styles.attachment}>
-                        <Text style={styles.attName}>Barrel Stabilizer</Text>
-                        <View style={styles.attTable}>
-                            <View style={styles.rarity}>
-                                <Text style={styles.common}>Common</Text>
-                                <Text style={styles.rare}>Rare</Text>
-                                <Text style={styles.epic}>Epic</Text>
-                            </View>
-                            <View style={styles.benefits}>
-                                <View style={styles.benefit}>
-                                    <Text style={styles.benefitText}>+ Recoil Reduction</Text>
-                                </View>
-                                <View style={styles.benefit}>
-                                    <Text style={styles.benefitText}>++ Recoil Reduction</Text>
-                                </View>
-                                <View style={styles.benefit}>
-                                    <Text style={styles.benefitText}>+++ Recoil Reduction</Text>
+                                <View style={styles.benefits}>
+                                    <View style={styles.benefit}>
+                                        <Text style={styles.benefitText}>+ Ammo Capacity</Text>
+                                    </View>
+                                    <View style={styles.benefit}>
+                                        <Text style={styles.benefitText}>++ Ammo Capacity</Text>
+                                        <Text style={styles.benefitText}>+ Fast Reloads</Text>
+                                    </View>
+                                    <View style={styles.benefit}>
+                                        <Text style={styles.benefitText}>+++ Ammo Capacity</Text>
+                                        <Text style={styles.benefitText}>++ Fast Reloads</Text>
+                                    </View>
                                 </View>
                             </View>
                         </View>
-                    </View>
-                    <View style={styles.attachment}>
-                        <Text style={styles.attName}>Stock</Text>
-                        <Text style={styles.attBracket}>(Standard & Sniper)</Text>
-                        <View style={styles.attTable}>
-                            <View style={styles.rarity}>
-                                <Text style={styles.common}>Common</Text>
-                                <Text style={styles.rare}>Rare</Text>
-                                <Text style={styles.epic}>Epic</Text>
-                            </View>
-                            <View style={styles.benefits}>
-                                <View style={styles.benefit}>
-                                    <Text style={styles.benefitText}>+ Handling</Text>
-                                    <Text style={styles.benefitText}>+ Reduce Aim Drift</Text>
+                        {/* Each Attachment */}
+                        <View style={styles.attachment}>
+                            <Text style={styles.attName}>Barrel Stabilizer</Text>
+                            <View style={styles.attTable}>
+                                <View style={styles.rarity}>
+                                    <Text style={styles.common}>Common</Text>
+                                    <Text style={styles.rare}>Rare</Text>
+                                    <Text style={styles.epic}>Epic</Text>
                                 </View>
-                                <View style={styles.benefit}>
-                                    <Text style={styles.benefitText}>++ Handling</Text>
-                                    <Text style={styles.benefitText}>++ Reduce Aim Drift</Text>
-                                </View>
-                                <View style={styles.benefit}>
-                                    <Text style={styles.benefitText}>+++ Handling</Text>
-                                    <Text style={styles.benefitText}>+++ Reduce Aim Drift</Text>
+                                <View style={styles.benefits}>
+                                    <View style={styles.benefit}>
+                                        <Text style={styles.benefitText}>+ Recoil Reduction</Text>
+                                    </View>
+                                    <View style={styles.benefit}>
+                                        <Text style={styles.benefitText}>++ Recoil Reduction</Text>
+                                    </View>
+                                    <View style={styles.benefit}>
+                                        <Text style={styles.benefitText}>+++ Recoil Reduction</Text>
+                                    </View>
                                 </View>
                             </View>
                         </View>
-                    </View>
-                    <View style={styles.attachment}>
-                        <Text style={styles.attName}>Shotgun Bolt</Text>
-                        <View style={styles.attTable}>
-                            <View style={styles.rarity}>
-                                <Text style={styles.common}>Common</Text>
-                                <Text style={styles.rare}>Rare</Text>
-                                <Text style={styles.epic}>Epic</Text>
-                            </View>
-                            <View style={styles.benefits}>
-                                <View style={styles.benefit}>
-                                    <Text style={styles.benefitText}>+ Fire Rate</Text>
+                        {/* Each Attachment */}
+                        <View style={styles.attachment}>
+                            <Text style={styles.attName}>Stock</Text>
+                            <Text style={styles.attBracket}>(Standard & Sniper)</Text>
+                            <View style={styles.attTable}>
+                                <View style={styles.rarity}>
+                                    <Text style={styles.common}>Common</Text>
+                                    <Text style={styles.rare}>Rare</Text>
+                                    <Text style={styles.epic}>Epic</Text>
                                 </View>
-                                <View style={styles.benefit}>
-                                    <Text style={styles.benefitText}>++ Fire Rate</Text>
-                                </View>
-                                <View style={styles.benefit}>
-                                    <Text style={styles.benefitText}>+++ Fire Rate</Text>
+                                <View style={styles.benefits}>
+                                    <View style={styles.benefit}>
+                                        <Text style={styles.benefitText}>+ Handling</Text>
+                                        <Text style={styles.benefitText}>+ Reduce Aim Drift</Text>
+                                    </View>
+                                    <View style={styles.benefit}>
+                                        <Text style={styles.benefitText}>++ Handling</Text>
+                                        <Text style={styles.benefitText}>++ Reduce Aim Drift</Text>
+                                    </View>
+                                    <View style={styles.benefit}>
+                                        <Text style={styles.benefitText}>+++ Handling</Text>
+                                        <Text style={styles.benefitText}>+++ Reduce Aim Drift</Text>
+                                    </View>
                                 </View>
                             </View>
                         </View>
+                        {/* Each Attachment */}
+                        <View style={styles.attachment}>
+                            <Text style={styles.attName}>Shotgun Bolt</Text>
+                            <View style={styles.attTable}>
+                                <View style={styles.rarity}>
+                                    <Text style={styles.common}>Common</Text>
+                                    <Text style={styles.rare}>Rare</Text>
+                                    <Text style={styles.epic}>Epic</Text>
+                                </View>
+                                <View style={styles.benefits}>
+                                    <View style={styles.benefit}>
+                                        <Text style={styles.benefitText}>+ Fire Rate</Text>
+                                    </View>
+                                    <View style={styles.benefit}>
+                                        <Text style={styles.benefitText}>++ Fire Rate</Text>
+                                    </View>
+                                    <View style={styles.benefit}>
+                                        <Text style={styles.benefitText}>+++ Fire Rate</Text>
+                                    </View>
+                                </View>
+                            </View>
+                        </View>
+
+                        <View style={styles.hopcontainer}>
+                            <Text style={styles.attTitle}>Hop-Up Attachments</Text>
+                            <View style={styles.hopup}>
+                                <Text style={styles.hopupName}>Skullpiercer Rifling</Text>
+                                <Text style={styles.hopupEffectTitle}>Effect</Text>
+                                <Text style={styles.hopupEffect}>Increase headshot damage</Text>
+                                <Text style={styles.hopupAppTitle}>Applicable Weapons</Text>
+                                <Text style={styles.hopupAppWeapons}>Wingman, Longbow</Text>
+                            </View>
+                            <View style={styles.hopup}>
+                                <Text style={styles.hopupName}>Selecfire Receiver</Text>
+                                <Text style={styles.hopupEffectTitle}>Effect</Text>
+                                <Text style={styles.hopupEffect}>Switch between fire modes</Text>
+                                <Text style={styles.hopupAppTitle}>Applicable Weapons</Text>
+                                <Text style={styles.hopupAppWeapons}>Prowler, Havok</Text>
+                            </View>
+                            <View style={styles.hopup}>
+                                <Text style={styles.hopupName}>Precision Choke</Text>
+                                <Text style={styles.hopupEffectTitle}>Effect</Text>
+                                <Text style={styles.hopupEffect}>Reduces the pejectile spread</Text>
+                                <Text style={styles.hopupAppTitle}>Applicable Weapons</Text>
+                                <Text style={styles.hopupAppWeapons}>Peacekeeper, Triple Take</Text>
+                            </View>
+                            <View style={styles.hopup}>
+                                <Text style={styles.hopupName}>Turbocharger</Text>
+                                <Text style={styles.hopupEffectTitle}>Effect</Text>
+                                <Text style={styles.hopupEffect}>Reduces spin-up time</Text>
+                                <Text style={styles.hopupAppTitle}>Applicable Weapons</Text>
+                                <Text style={styles.hopupAppWeapons}>Devotion, Havok</Text>
+                            </View>
+                        </View>
                     </View>
-                </View>
+                </ScrollView>
             </View>
             </>
         );
@@ -134,7 +174,7 @@ const HEIGHT = Dimensions.get('window').height;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: 'lightgrey',
+        backgroundColor: 'black',
         alignItems: 'center'
     },
     attTitle: {
@@ -148,12 +188,15 @@ const styles = StyleSheet.create({
 
     },
     attachment: {
-
+        borderBottomWidth:1,
+        borderColor: 'white',
+        marginTop: 10,
     },
     attName: {
         textAlign: 'center',
         color:'white',
         fontSize: 19,
+        // textDecorationLine: 'underline',
     },
     attBracket: {
         color: 'white',
@@ -164,6 +207,8 @@ const styles = StyleSheet.create({
     },
     rarity: {
         flexDirection: 'row',
+        marginBottom: 20,
+        marginTop: 20,
     },
     common: {
         color: 'grey',
@@ -190,6 +235,7 @@ const styles = StyleSheet.create({
     },
     benefits: {
         flexDirection: 'row',
+        marginBottom: 20,
     },
     benefit: {
         width:WIDTH*0.33,
@@ -199,5 +245,44 @@ const styles = StyleSheet.create({
         fontSize: 10,
         textAlign: 'center',
 
-    }
+    },
+    hopcontainer: {
+        alignItems: 'center',
+
+    },
+    hopup: {
+        width: WIDTH*0.8,
+        textAlign: 'center',
+        borderWidth: 1,
+        borderColor: 'white',
+        borderRadius: 5,
+        padding: 10,
+        margin: 10,
+    },
+    hopupName:{
+        color: 'white',
+        textAlign: 'center',
+        fontSize: 20,
+
+    },
+    hopupEffectTitle: {
+        color: 'white', 
+        textAlign: 'center',
+
+    }, 
+    hopupEffect: {
+        color: 'white',
+        textAlign: 'center',
+
+    },
+    hopupAppTitle: {
+        color: 'white',
+        textAlign: 'center',
+
+    },
+    hopupAppWeapons: {
+        color: 'white',
+        textAlign: 'center',
+
+    }, 
 })
