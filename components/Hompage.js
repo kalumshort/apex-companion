@@ -28,7 +28,7 @@ class HomePage extends Component {
                         <ImageBackground
                         style={styles.itemImage}
                         source={require('../assets/apex-embed-legends-lineup.png')}>
-                            <Text style={styles.itemText}>View Legends</Text>
+                            <Text style={styles.itemText}>Legends</Text>
                         </ImageBackground>
                     </TouchableHighlight>
 
@@ -39,7 +39,7 @@ class HomePage extends Component {
                         <ImageBackground
                         style={styles.itemImage}
                         source={{uri:"https://www.pcgamesn.com/wp-content/uploads/2019/02/apex-legends-weapons-best-guns.jpg"}}>
-                            <Text style={styles.itemText}>View Guns</Text>
+                            <Text style={styles.itemText}>Weapons</Text>
                         </ImageBackground>
                     </TouchableHighlight>
 
@@ -50,7 +50,18 @@ class HomePage extends Component {
                         <ImageBackground
                         style={styles.itemImage}
                         source={{uri:"https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/apex-grid-tile-about-explore-more-community.jpg"}}>
-                            <Text style={styles.itemText}>View Attachments</Text>
+                            <Text style={styles.itemText}>Attachments</Text>
+                        </ImageBackground>
+                    </TouchableHighlight>
+
+                     {/* VIEW ATTACHMENTS */}
+                     <TouchableHighlight
+                    onPress={this.props.handleHealthPress}
+                    >
+                        <ImageBackground
+                        style={styles.itemImage}
+                        source={{uri:"https://media.contentapi.ea.com/content/dam/apex-legends/common/legend-wallpapers/apex-concept-art-wallpaper-lifeline.png"}}>
+                            <Text style={styles.itemText}>Health Items</Text>
                         </ImageBackground>
                     </TouchableHighlight>
 
@@ -61,7 +72,7 @@ class HomePage extends Component {
                         <ImageBackground
                         style={styles.itemImage}
                         source={{uri:"https://dotesports-media.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2019/02/06114439/apex_legends_1.0.jpg"}}>
-                            <Text style={styles.itemText}>View Map</Text>
+                            <Text style={styles.itemText}> Map</Text>
                         </ImageBackground>
                     </TouchableHighlight>
 
@@ -72,7 +83,7 @@ class HomePage extends Component {
                         <ImageBackground
                         style={styles.itemImage}
                         source={{uri:"https://culturedvultures.com/wp-content/uploads/2019/02/Apex-Legends-Seasons.jpg"}}>
-                            <Text style={styles.itemText}>View Seasons</Text>
+                            <Text style={styles.itemText}>Seasons</Text>
                         </ImageBackground>
                     </TouchableHighlight>
 
