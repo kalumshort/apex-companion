@@ -256,6 +256,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         color:'white',
         fontSize: 19,
+        fontWeight: '900',
         margin: 5,
         // textDecorationLine: 'underline',
     },
