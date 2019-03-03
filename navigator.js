@@ -26,10 +26,13 @@ import MapScreen from './containers/MapPageScreen';
 import ContactScreen from './containers/ContactScreen';
 // Importing the attachments screen
 import AttachmentsScreen from './containers/AttachmentsScreen';
+// Importing the Health Page
+import HealthScreen from './containers/HealthScreen.js';
 // Importing the menu button component
 import MenuButton from './components/MenuButton';
 // Importing the drawer component
 import MenuDrawer from './components/MenuDrawer';
+import HealthPage from './components/Health';
 
 // Styling the stack navigators
 const navigationOptions = ({ navigation }) => {
@@ -134,6 +137,18 @@ const AttachmentsStack = createStackNavigator(
         defaultNavigationOptions: navigationOptions,
     }
 )
+
+// Making the Stack for the Health Page
+const HealthStack = createStackNavigator(
+    {
+        Health: {
+            screen: HealthPage
+        }
+    },
+    {
+        defaultNavigationOptions: navigationOptions,
+    }
+)
 // Making the Contact Screen Stack
 const ContactStack = createStackNavigator(
     {
@@ -165,6 +180,7 @@ const DrawerNavigator = createDrawerNavigator(
         Legends: LegendsStack,
         Guns: GunStack,
         Attachments: AttachmentsStack,
+        Health: HealthStack,
         Map: MapStack,
         Contact: ContactStack,
     },

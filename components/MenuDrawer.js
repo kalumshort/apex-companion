@@ -8,12 +8,14 @@ import {
     StyleSheet,
     TouchableOpacity,
     Image,
+    ScrollView,
 } from 'react-native';
 
 import { 
     Ionicons,
     MaterialCommunityIcons,
     FontAwesome,
+    Foundation,
 
  } from '@expo/vector-icons';
 
@@ -26,6 +28,7 @@ export default class MenuDrawer extends React.Component {
     render() {
         return(
             <View style={styles.container}>
+                <ScrollView>
                 <View style={styles.drawerHeader}>
                     <Image style={styles.headerImage} source={{uri:'https://media.contentapi.ea.com/content/dam/apex-legends/common/legend-wallpapers/apex-concept-art-wallpaper-caustic.png'}}/>
                 </View>
@@ -38,7 +41,7 @@ export default class MenuDrawer extends React.Component {
                                 style={styles.icon}
                             />
                             <Text style={styles.link}>Home</Text>
-                         </TouchableOpacity>
+                        </TouchableOpacity>
                     </View>
                     <View>
                         <TouchableOpacity style={styles.Links} onPress={() => this.props.navigation.navigate('Legends')}>
@@ -71,6 +74,16 @@ export default class MenuDrawer extends React.Component {
                         </TouchableOpacity>
                     </View>
                     <View>
+                        <TouchableOpacity style={styles.Links} onPress={() => this.props.navigation.navigate('Health')}>
+                            <Foundation
+                                name="first-aid"
+                                size={37}
+                                style={styles.icon}
+                            />
+                            <Text style={styles.link}>Health Items</Text>
+                        </TouchableOpacity>
+                    </View>
+                    <View>
                         <TouchableOpacity style={styles.Links} onPress={() => this.props.navigation.navigate('Map')}>
                             <MaterialCommunityIcons
                                 name="map-legend"
@@ -91,6 +104,7 @@ export default class MenuDrawer extends React.Component {
                         </TouchableOpacity>
                     </View>
                 </View>
+                </ScrollView>
             </View>
         )
     }
