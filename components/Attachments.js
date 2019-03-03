@@ -45,12 +45,12 @@ class AttachmentsPage extends Component {
                                         <Text style={styles.benefitText}>+ Ammo Capacity</Text>
                                     </View>
                                     <View style={styles.benefit}>
-                                        <Text style={styles.benefitText}>++ Ammo Capacity</Text>
-                                        <Text style={styles.benefitText}>+ Fast Reloads</Text>
+                                        <Text style={styles.benefitText}> ++ Ammo Capacity</Text>
+                                        <Text style={styles.benefitText}>+ Fast Reload</Text>
                                     </View>
                                     <View style={styles.benefit}>
                                         <Text style={styles.benefitText}>+++ Ammo Capacity</Text>
-                                        <Text style={styles.benefitText}>++ Fast Reloads</Text>
+                                        <Text style={styles.benefitText}>++ Fast Reload</Text>
                                     </View>
                                 </View>
                             </View>
@@ -161,6 +161,60 @@ class AttachmentsPage extends Component {
                                 <Text style={styles.hopupAppWeapons}>Devotion, Havok</Text>
                             </View>
                         </View>
+                        {/* Optic Attachments */}
+                        <View style={styles.opticContainer}>
+                            <Text style={styles.opticHeader}>Optic Attachments</Text>
+                            <View style={styles.optic}>
+                                <Text style={styles.opticName}>1x Holo</Text>
+                                <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
+                                <Text style={styles.opticWeapons}>All Weapons</Text>
+                            </View>
+                            <View style={styles.optic}>
+                                <Text style={styles.opticName}>1x-2x Variable Holo</Text>
+                                <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
+                                <Text style={styles.opticWeapons}>All Weapons</Text>
+                            </View>
+                            <View style={styles.optic}>
+                                <Text style={styles.opticName}>1x HCOG (Classic)</Text>
+                                <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
+                                <Text style={styles.opticWeapons}>All Weapons</Text>
+                            </View>
+                            <View style={styles.optic}>
+                                <Text style={styles.opticName}>2x HCOG (Bruiser)</Text>
+                                <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
+                                <Text style={styles.opticWeapons}>All Weapons</Text>
+                            </View>
+                            <View style={styles.optic}>
+                                <Text style={styles.opticName}>3x HCOG (Ranger)</Text>
+                                <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
+                                <Text style={styles.opticWeapons}>All Weapons</Text>
+                            </View>
+                            <View style={styles.optic}>
+                                <Text style={styles.opticName}>2x-4x Variable AOG</Text>
+                                <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
+                                <Text style={styles.opticWeapons}>Snipers, LMGs, AR, SMGs</Text>
+                            </View>
+                            <View style={styles.optic}>
+                                <Text style={styles.opticNameLegend}>1x Digital Threat</Text>
+                                <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
+                                <Text style={styles.opticWeapons}>Shotguns, SMGs, Pistols</Text>
+                            </View>
+                            <View style={styles.optic}>
+                                <Text style={styles.opticName}>6x Sniper</Text>
+                                <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
+                                <Text style={styles.opticWeapons}>Sniper</Text>
+                            </View>
+                            <View style={styles.optic}>
+                                <Text style={styles.opticName}>4x-8x Sniper</Text>
+                                <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
+                                <Text style={styles.opticWeapons}>Sniper</Text>
+                            </View>
+                            <View style={styles.optic}>
+                                <Text style={styles.opticNameLegend}>4x-10x Digital Sniper Threat</Text>
+                                <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
+                                <Text style={styles.opticWeapons}>Sniper</Text>
+                            </View>
+                        </View>
                     </View>
                 </ScrollView>
             </View>
@@ -192,14 +246,17 @@ const styles = StyleSheet.create({
 
     },
     attachment: {
-        borderBottomWidth:1,
+        width: WIDTH*0.9,
+        borderWidth:1,
         borderColor: 'white',
-        marginTop: 10,
+        borderRadius: 5,
+        margin: 10,
     },
     attName: {
         textAlign: 'center',
         color:'white',
         fontSize: 19,
+        margin: 5,
         // textDecorationLine: 'underline',
     },
     attBracket: {
@@ -216,14 +273,14 @@ const styles = StyleSheet.create({
     },
     common: {
         color: 'grey',
-        width: WIDTH*0.33,
+        width: WIDTH*0.3,
         textAlign: 'center',
         fontSize: 19,
 
     },
     rare: {
         color:'blue',
-        width: WIDTH*0.33,
+        width: WIDTH*0.3,
         textAlign: 'center',
         fontSize: 19,
 
@@ -231,7 +288,7 @@ const styles = StyleSheet.create({
     },
     epic: {
         color: 'purple',
-        width: WIDTH*0.33,
+        width: WIDTH*0.3,
         textAlign: 'center',
         fontSize: 19,
 
@@ -242,7 +299,8 @@ const styles = StyleSheet.create({
         marginBottom: 20,
     },
     benefit: {
-        width:WIDTH*0.33,
+        width:WIDTH*0.3,
+        padding: 5,
     },
     benefitText: {
         color: 'white',
@@ -298,6 +356,46 @@ const styles = StyleSheet.create({
         color: 'white',
         textAlign: 'center',
         fontStyle: 'italic',
+
+    },
+    opticContainer: {
+        alignItems: 'center',
+    },
+    opticHeader: {
+        color: 'white',
+        fontSize: 25,
+        borderBottomWidth: 1,
+        borderColor: 'white',
+    },
+    optic: {
+        width: WIDTH*0.8,
+        borderWidth: 1,
+        borderColor: 'white',
+        borderRadius: 5,
+        alignItems: 'center',
+        padding: 10,
+        margin: 10,
+    },
+    opticName: {
+        color: 'white',
+        fontSize: 19,
+        margin: 5,
+
+    },
+    opticNameLegend: {
+        color: '#FFD700',
+        fontSize: 19,
+        margin: 5,
+    },
+    opticWeaponsTitle: {
+        color: 'white',
+        fontSize: 15,
+        fontWeight: '900',
+
+    },
+    opticWeapons: {
+        color: '#E20808',
+        margin: 5,
 
     }, 
 })
