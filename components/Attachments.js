@@ -35,45 +35,41 @@ class AttachmentsPage extends Component {
                             <Text style={styles.attName}>Magazine</Text>
                             <Text style={styles.attBracket}>(Heavy & Light)</Text>
                             <View style={styles.attTable}>
-                                <View style={styles.rarity}>
+
+                                <View style={styles.commonAtt}>
                                     <Text style={styles.common}>Common</Text>
+                                    <Text style={styles.benefitText}>+ Ammo Capacity</Text>
+                                </View>
+
+                                <View style={styles.rareAtt}>
                                     <Text style={styles.rare}>Rare</Text>
+                                    <Text style={styles.benefitText}> ++ Ammo Capacity</Text>
+                                    <Text style={styles.benefitText}>+ Fast Reload</Text>
+                                </View>
+
+                                <View style={styles.epicAtt}>
                                     <Text style={styles.epic}>Epic</Text>
+                                    <Text style={styles.benefitText}>+++ Ammo Capacity</Text>
+                                    <Text style={styles.benefitText}>++ Fast Reload</Text>
                                 </View>
-                                <View style={styles.benefits}>
-                                    <View style={styles.benefit}>
-                                        <Text style={styles.benefitText}>+ Ammo Capacity</Text>
-                                    </View>
-                                    <View style={styles.benefit}>
-                                        <Text style={styles.benefitText}> ++ Ammo Capacity</Text>
-                                        <Text style={styles.benefitText}>+ Fast Reload</Text>
-                                    </View>
-                                    <View style={styles.benefit}>
-                                        <Text style={styles.benefitText}>+++ Ammo Capacity</Text>
-                                        <Text style={styles.benefitText}>++ Fast Reload</Text>
-                                    </View>
-                                </View>
+
                             </View>
                         </View>
                         {/* Each Attachment */}
                         <View style={styles.attachment}>
                             <Text style={styles.attName}>Barrel Stabilizer</Text>
                             <View style={styles.attTable}>
-                                <View style={styles.rarity}>
+                                <View style={styles.commonAtt}>
                                     <Text style={styles.common}>Common</Text>
-                                    <Text style={styles.rare}>Rare</Text>
-                                    <Text style={styles.epic}>Epic</Text>
+                                    <Text style={styles.benefitText}>+ Recoil Reduction</Text>
                                 </View>
-                                <View style={styles.benefits}>
-                                    <View style={styles.benefit}>
-                                        <Text style={styles.benefitText}>+ Recoil Reduction</Text>
-                                    </View>
-                                    <View style={styles.benefit}>
-                                        <Text style={styles.benefitText}>++ Recoil Reduction</Text>
-                                    </View>
-                                    <View style={styles.benefit}>
-                                        <Text style={styles.benefitText}>+++ Recoil Reduction</Text>
-                                    </View>
+                                <View style={styles.rareAtt}>
+                                    <Text style={styles.rare}>Rare</Text>
+                                    <Text style={styles.benefitText}>++ Recoil Reduction</Text>
+                                </View>
+                                <View style={styles.epicAtt}>
+                                    <Text style={styles.epic}>Epic</Text>
+                                    <Text style={styles.benefitText}>+++ Recoil Reduction</Text>
                                 </View>
                             </View>
                         </View>
@@ -82,24 +78,20 @@ class AttachmentsPage extends Component {
                             <Text style={styles.attName}>Stock</Text>
                             <Text style={styles.attBracket}>(Standard & Sniper)</Text>
                             <View style={styles.attTable}>
-                                <View style={styles.rarity}>
+                                <View style={styles.commonAtt}>
                                     <Text style={styles.common}>Common</Text>
-                                    <Text style={styles.rare}>Rare</Text>
-                                    <Text style={styles.epic}>Epic</Text>
+                                    <Text style={styles.benefitText}>+ Handling</Text>
+                                    <Text style={styles.benefitText}>+ Reduce Aim Drift</Text>
                                 </View>
-                                <View style={styles.benefits}>
-                                    <View style={styles.benefit}>
-                                        <Text style={styles.benefitText}>+ Handling</Text>
-                                        <Text style={styles.benefitText}>+ Reduce Aim Drift</Text>
-                                    </View>
-                                    <View style={styles.benefit}>
-                                        <Text style={styles.benefitText}>++ Handling</Text>
-                                        <Text style={styles.benefitText}>++ Reduce Aim Drift</Text>
-                                    </View>
-                                    <View style={styles.benefit}>
-                                        <Text style={styles.benefitText}>+++ Handling</Text>
-                                        <Text style={styles.benefitText}>+++ Reduce Aim Drift</Text>
-                                    </View>
+                                <View style={styles.rareAtt}>
+                                    <Text style={styles.rare}>Rare</Text>
+                                    <Text style={styles.benefitText}>++ Handling</Text>
+                                    <Text style={styles.benefitText}>++ Reduce Aim Drift</Text>
+                                </View>
+                                <View style={styles.epicAtt}>
+                                    <Text style={styles.epic}>Epic</Text>
+                                    <Text style={styles.benefitText}>+++ Handling</Text>
+                                    <Text style={styles.benefitText}>+++ Reduce Aim Drift</Text>
                                 </View>
                             </View>
                         </View>
@@ -107,113 +99,109 @@ class AttachmentsPage extends Component {
                         <View style={styles.attachment}>
                             <Text style={styles.attName}>Shotgun Bolt</Text>
                             <View style={styles.attTable}>
-                                <View style={styles.rarity}>
+                                <View style={styles.commonAtt}>
                                     <Text style={styles.common}>Common</Text>
+                                    <Text style={styles.benefitText}>+ Fire Rate</Text>
+                                </View>
+                                <View style={styles.rareAtt}>
                                     <Text style={styles.rare}>Rare</Text>
+                                    <Text style={styles.benefitText}>++ Fire Rate</Text>
+                                </View>
+                                <View style={styles.epicAtt}>
                                     <Text style={styles.epic}>Epic</Text>
-                                </View>
-                                <View style={styles.benefits}>
-                                    <View style={styles.benefit}>
-                                        <Text style={styles.benefitText}>+ Fire Rate</Text>
-                                    </View>
-                                    <View style={styles.benefit}>
-                                        <Text style={styles.benefitText}>++ Fire Rate</Text>
-                                    </View>
-                                    <View style={styles.benefit}>
-                                        <Text style={styles.benefitText}>+++ Fire Rate</Text>
-                                    </View>
+                                    <Text style={styles.benefitText}>+++ Fire Rate</Text>
                                 </View>
                             </View>
                         </View>
-                        {/* HOP-UP Attachments */}
-                        <View style={styles.hopcontainer}>
-                            <Text style={styles.attTitle}>Hop-Up Attachments</Text>
-                             {/* Skullpiercer */}
-                            <View style={styles.hopup}>
-                                <Text style={styles.hopupName}>Skullpiercer Rifling</Text>
-                                <Text style={styles.hopupEffectTitle}>Effect</Text>
-                                <Text style={styles.hopupEffect}>Increase headshot damage</Text>
-                                <Text style={styles.hopupAppTitle}>Applicable Weapons</Text>
-                                <Text style={styles.hopupAppWeapons}>Wingman, Longbow</Text>
-                            </View>
-                            {/* Selectfire */}
-                            <View style={styles.hopup}>
-                                <Text style={styles.hopupName}>Selectfire Receiver</Text>
-                                <Text style={styles.hopupEffectTitle}>Effect</Text>
-                                <Text style={styles.hopupEffect}>Switch between fire modes</Text>
-                                <Text style={styles.hopupAppTitle}>Applicable Weapons</Text>
-                                <Text style={styles.hopupAppWeapons}>Prowler, Havok</Text>
-                            </View>
-                            {/* Precision */}
-                            <View style={styles.hopup}>
-                                <Text style={styles.hopupName}>Precision Choke</Text>
-                                <Text style={styles.hopupEffectTitle}>Effect</Text>
-                                <Text style={styles.hopupEffect}>Reduces the projectile spread</Text>
-                                <Text style={styles.hopupAppTitle}>Applicable Weapons</Text>
-                                <Text style={styles.hopupAppWeapons}>Peacekeeper, Triple Take</Text>
-                            </View>
-                            {/* Turbocharger */}
-                            <View style={styles.hopup}>
-                                <Text style={styles.hopupName}>Turbocharger</Text>
-                                <Text style={styles.hopupEffectTitle}>Effect</Text>
-                                <Text style={styles.hopupEffect}>Reduces spin-up time</Text>
-                                <Text style={styles.hopupAppTitle}>Applicable Weapons</Text>
-                                <Text style={styles.hopupAppWeapons}>Devotion, Havok</Text>
-                            </View>
+                    </View>
+                    {/* HOP-UP Attachments */}
+                    <View style={styles.hopcontainer}>
+                        <Text style={styles.hopUpTitle}>Hop-Up Attachments</Text>
+                            {/* Skullpiercer */}
+                        <View style={styles.hopup}>
+                            <Text style={styles.hopupName}>Skullpiercer Rifling</Text>
+                            <Text style={styles.hopupEffectTitle}>Effect</Text>
+                            <Text style={styles.hopupEffect}>Increase headshot damage</Text>
+                            <Text style={styles.hopupAppTitle}>Applicable Weapons</Text>
+                            <Text style={styles.hopupAppWeapons}>Wingman, Longbow</Text>
                         </View>
-                        {/* Optic Attachments */}
-                        <View style={styles.opticContainer}>
-                            <Text style={styles.opticHeader}>Optic Attachments</Text>
-                            <View style={styles.optic}>
-                                <Text style={styles.opticName}>1x Holo</Text>
-                                <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
-                                <Text style={styles.opticWeapons}>All Weapons</Text>
-                            </View>
-                            <View style={styles.optic}>
-                                <Text style={styles.opticName}>1x-2x Variable Holo</Text>
-                                <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
-                                <Text style={styles.opticWeapons}>All Weapons</Text>
-                            </View>
-                            <View style={styles.optic}>
-                                <Text style={styles.opticName}>1x HCOG (Classic)</Text>
-                                <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
-                                <Text style={styles.opticWeapons}>All Weapons</Text>
-                            </View>
-                            <View style={styles.optic}>
-                                <Text style={styles.opticName}>2x HCOG (Bruiser)</Text>
-                                <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
-                                <Text style={styles.opticWeapons}>All Weapons</Text>
-                            </View>
-                            <View style={styles.optic}>
-                                <Text style={styles.opticName}>3x HCOG (Ranger)</Text>
-                                <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
-                                <Text style={styles.opticWeapons}>All Weapons</Text>
-                            </View>
-                            <View style={styles.optic}>
-                                <Text style={styles.opticName}>2x-4x Variable AOG</Text>
-                                <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
-                                <Text style={styles.opticWeapons}>Snipers, LMGs, AR, SMGs</Text>
-                            </View>
-                            <View style={styles.optic}>
-                                <Text style={styles.opticNameLegend}>1x Digital Threat</Text>
-                                <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
-                                <Text style={styles.opticWeapons}>Shotguns, SMGs, Pistols</Text>
-                            </View>
-                            <View style={styles.optic}>
-                                <Text style={styles.opticName}>6x Sniper</Text>
-                                <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
-                                <Text style={styles.opticWeapons}>Sniper</Text>
-                            </View>
-                            <View style={styles.optic}>
-                                <Text style={styles.opticName}>4x-8x Sniper</Text>
-                                <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
-                                <Text style={styles.opticWeapons}>Sniper</Text>
-                            </View>
-                            <View style={styles.optic}>
-                                <Text style={styles.opticNameLegend}>4x-10x Digital Sniper Threat</Text>
-                                <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
-                                <Text style={styles.opticWeapons}>Sniper</Text>
-                            </View>
+                        {/* Selectfire */}
+                        <View style={styles.hopup}>
+                            <Text style={styles.hopupName}>Selectfire Receiver</Text>
+                            <Text style={styles.hopupEffectTitle}>Effect</Text>
+                            <Text style={styles.hopupEffect}>Switch between fire modes</Text>
+                            <Text style={styles.hopupAppTitle}>Applicable Weapons</Text>
+                            <Text style={styles.hopupAppWeapons}>Prowler, Havok</Text>
+                        </View>
+                        {/* Precision */}
+                        <View style={styles.hopup}>
+                            <Text style={styles.hopupName}>Precision Choke</Text>
+                            <Text style={styles.hopupEffectTitle}>Effect</Text>
+                            <Text style={styles.hopupEffect}>Reduces the projectile spread</Text>
+                            <Text style={styles.hopupAppTitle}>Applicable Weapons</Text>
+                            <Text style={styles.hopupAppWeapons}>Peacekeeper, Triple Take</Text>
+                        </View>
+                        {/* Turbocharger */}
+                        <View style={styles.hopup}>
+                            <Text style={styles.hopupName}>Turbocharger</Text>
+                            <Text style={styles.hopupEffectTitle}>Effect</Text>
+                            <Text style={styles.hopupEffect}>Reduces spin-up time</Text>
+                            <Text style={styles.hopupAppTitle}>Applicable Weapons</Text>
+                            <Text style={styles.hopupAppWeapons}>Devotion, Havok</Text>
+                        </View>
+                    </View>
+                    {/* Optic Attachments */}
+                    <View style={styles.opticContainer}>
+                        <Text style={styles.opticHeader}>Optic Attachments</Text>
+                        <View style={[styles.optic, styles.commonOptic]}>
+                            <Text style={styles.opticNameCommon}>1x Holo</Text>
+                            <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
+                            <Text style={styles.opticWeapons}>All Weapons</Text>
+                        </View>
+                        <View style={[styles.optic, styles.rareOptic]}>
+                            <Text style={styles.opticNameRare}>1x-2x Variable Holo</Text>
+                            <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
+                            <Text style={styles.opticWeapons}>All Weapons</Text>
+                        </View>
+                        <View style={[styles.optic, styles.commonOptic]}>
+                            <Text style={styles.opticNameCommon}>1x HCOG (Classic)</Text>
+                            <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
+                            <Text style={styles.opticWeapons}>All Weapons</Text>
+                        </View>
+                        <View style={[styles.optic, styles.rareOptic]}>
+                            <Text style={styles.opticNameRare}>2x HCOG (Bruiser)</Text>
+                            <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
+                            <Text style={styles.opticWeapons}>All Weapons</Text>
+                        </View>
+                        <View style={[styles.optic, styles.epicOptic]}>
+                            <Text style={styles.opticNameEpic}>3x HCOG (Ranger)</Text>
+                            <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
+                            <Text style={styles.opticWeapons}>All Weapons</Text>
+                        </View>
+                        <View style={[styles.optic, styles.epicOptic]}>
+                            <Text style={styles.opticNameEpic}>2x-4x Variable AOG</Text>
+                            <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
+                            <Text style={styles.opticWeapons}>Snipers, LMGs, AR, SMGs</Text>
+                        </View>
+                        <View style={[styles.optic, styles.legendOptic]}>
+                            <Text style={styles.opticNameLegend}>1x Digital Threat</Text>
+                            <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
+                            <Text style={styles.opticWeapons}>Shotguns, SMGs, Pistols</Text>
+                        </View>
+                        <View style={[styles.optic, styles.epicOptic]}>
+                            <Text style={styles.opticNameEpic}>6x Sniper</Text>
+                            <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
+                            <Text style={styles.opticWeapons}>Sniper</Text>
+                        </View>
+                        <View style={[styles.optic, styles.epicOptic]}>
+                            <Text style={styles.opticNameEpic}>4x-8x Sniper</Text>
+                            <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
+                            <Text style={styles.opticWeapons}>Sniper</Text>
+                        </View>
+                        <View style={[styles.optic, styles.legendOptic]}>
+                            <Text style={styles.opticNameLegend}>4x-10x Digital Sniper Threat</Text>
+                            <Text style={styles.opticWeaponsTitle}>Applicable Weapons</Text>
+                            <Text style={styles.opticWeapons}>Sniper</Text>
                         </View>
                     </View>
                 </ScrollView>
@@ -230,20 +218,29 @@ const WIDTH = Dimensions.get('window').width;
 const HEIGHT = Dimensions.get('window').height;
 
 const styles = StyleSheet.create({
+
     container: {
-        flex: 1,
+        // flex: 1,
         backgroundColor: 'black',
-        alignItems: 'center'
+        alignItems: 'center',
+        
+    },
+
+    // ATTACHMENTS
+
+    attachments: {
+        borderWidth: 1,
+        borderColor: 'white',
+        borderRadius: 5,
+        margin: 10,
     },
     attTitle: {
         color: 'white',
         textAlign: 'center',
         fontSize: 25,
-        borderBottomWidth: 1,
-        borderColor: 'white',
-    },
-    attachments: {
-
+        margin: 10,
+        // borderBottomWidth: 1,
+        // borderColor: 'white',
     },
     attachment: {
         width: WIDTH*0.9,
@@ -255,7 +252,7 @@ const styles = StyleSheet.create({
     attName: {
         textAlign: 'center',
         color:'white',
-        fontSize: 19,
+        fontSize: 20,
         fontWeight: '900',
         margin: 5,
         // textDecorationLine: 'underline',
@@ -263,67 +260,96 @@ const styles = StyleSheet.create({
     attBracket: {
         color: 'white',
         textAlign: 'center',
+        fontStyle: 'italic',
     },
     attTable: {
-
+        alignItems: 'center',
     },
-    rarity: {
-        flexDirection: 'row',
-        marginBottom: 20,
-        marginTop: 20,
+    commonAtt:{
+        alignItems: 'center',
+        borderWidth: 1,
+        borderColor: 'grey',
+        borderRadius: 5,
+        width: WIDTH*0.8,
+        margin: 10,
+        padding: 10,
+        
     },
+    rareAtt: {
+        alignItems: 'center',
+        borderWidth: 1,
+        borderColor: 'blue',
+        borderRadius: 5,
+        width: WIDTH*0.8,
+        padding: 10,
+        
+    },
+    epicAtt: {
+        alignItems: 'center',
+        borderWidth: 1,
+        borderColor: 'purple',
+        borderRadius: 5,
+        width: WIDTH*0.8,
+        margin:10,
+        padding:10,
+        
+    }, 
     common: {
         color: 'grey',
-        width: WIDTH*0.3,
         textAlign: 'center',
         fontSize: 19,
-
+        fontWeight: '900',
     },
     rare: {
         color:'blue',
-        width: WIDTH*0.3,
         textAlign: 'center',
         fontSize: 19,
-
-
+        fontWeight: '900',
     },
     epic: {
         color: 'purple',
-        width: WIDTH*0.3,
         textAlign: 'center',
         fontSize: 19,
-
-
-    },
-    benefits: {
-        flexDirection: 'row',
-        marginBottom: 20,
+        fontWeight: '900',
     },
     benefit: {
-        width:WIDTH*0.3,
         padding: 5,
     },
     benefitText: {
         color: 'white',
-        fontSize: 10,
+        fontSize: 15,
         textAlign: 'center',
+        fontStyle: 'italic',
 
     },
+
+    // HOP-UPS
+
     hopcontainer: {
         alignItems: 'center',
+        borderWidth: 1,
+        borderColor: 'white',
+        borderRadius: 5,
+        margin: 10,
 
+    },
+    hopUpTitle: {
+        color: 'white',
+        textAlign: 'center',
+        fontSize: 25,
+        margin: 10,
     },
     hopup: {
         width: WIDTH*0.8,
         textAlign: 'center',
         borderWidth: 1,
-        borderColor: 'white',
+        borderColor: 'purple',
         borderRadius: 5,
         padding: 10,
         margin: 10,
     },
     hopupName:{
-        color: 'white',
+        color: 'purple',
         textAlign: 'center',
         fontSize: 20,
         fontWeight: '900',
@@ -359,14 +385,20 @@ const styles = StyleSheet.create({
         fontStyle: 'italic',
 
     },
+
+    // OPTICS
+
     opticContainer: {
         alignItems: 'center',
+        borderWidth: 1,
+        borderColor: 'white',
+        borderRadius: 5,
+        margin: 10,
     },
     opticHeader: {
         color: 'white',
         fontSize: 25,
-        borderBottomWidth: 1,
-        borderColor: 'white',
+        margin: 10,
     },
     optic: {
         width: WIDTH*0.8,
@@ -377,26 +409,53 @@ const styles = StyleSheet.create({
         padding: 10,
         margin: 10,
     },
-    opticName: {
-        color: 'white',
-        fontSize: 19,
+    commonOptic: {
+        borderColor: 'grey',
+        borderWidth: 2,
+    },
+    rareOptic: {
+        borderColor: 'blue',
+        borderWidth: 2,
+    },
+    epicOptic:{
+        borderColor: 'purple',
+        borderWidth: 2,
+    },
+    legendOptic: {
+        borderColor: '#FFD700',
+        borderWidth: 2,
+    },
+    opticNameCommon: {
+        color: 'grey',
+        fontSize: 20,
         margin: 5,
-
+    },
+    opticNameRare: {
+        color: 'blue',
+        fontSize: 20,
+        margin: 5,
+    },
+    opticNameEpic: {
+        color: 'purple',
+        fontSize: 20,
+        margin: 5,
     },
     opticNameLegend: {
         color: '#FFD700',
-        fontSize: 19,
+        textAlign: 'center',
+        fontSize: 20,
         margin: 5,
     },
     opticWeaponsTitle: {
         color: 'white',
-        fontSize: 15,
+        fontSize: 17,
         fontWeight: '900',
 
     },
     opticWeapons: {
         color: '#E20808',
         margin: 5,
+        fontSize: 15,
 
     }, 
 })
