@@ -112,7 +112,7 @@ export default class MenuDrawer extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: 'grey',
+        backgroundColor: '#30302e',
         flex: 1,
     },
     drawerHeader: {
@@ -139,7 +139,7 @@ const styles = StyleSheet.create({
     },
     link: {
         color: 'white',
-        fontSize: 25,
+        fontSize: 20,
         fontWeight: '100',
     },
 })
