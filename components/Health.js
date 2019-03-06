@@ -186,14 +186,14 @@ const styles = StyleSheet.create({
     healingItems: {
         // width: WIDTH*0.9,
         borderWidth:1,
-        borderColor: 'white',
+        borderColor: '#42fc05',
         borderRadius: 5,
         marginTop: 5,
 
     },
     healingHeader: {
         textAlign: 'center',
-        color: 'white',
+        color: '#42fc05',
         fontSize: 25,
         margin: 10,
     },
@@ -241,13 +241,13 @@ const styles = StyleSheet.create({
     },
     shieldItems: {
         borderWidth:1,
-        borderColor: 'white',
+        borderColor: '#05fcdf',
         borderRadius: 5,
         marginTop: 10,
 
     },
     shieldHeader: {
-        color: 'white',
+        color: '#05fcdf',
         textAlign: 'center',
         fontSize: 25,
         margin: 10,
@@ -263,7 +263,7 @@ const styles = StyleSheet.create({
     shieldName: {
         textAlign: 'center',
         color: 'white',
-        fontSize: 20,
+        fontSize: 23,
         fontWeight: '900',
         margin: 5,
 

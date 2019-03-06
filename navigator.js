@@ -176,7 +176,7 @@ const DrawerConfig = {
 // MAKING THE DRAWER NAVIGATOR
 const DrawerNavigator = createDrawerNavigator(
     {
-        Home: HealthStack,
+        Home: HomeStack,
         Legends: LegendsStack,
         Guns: GunStack,
         Attachments: AttachmentsStack,
