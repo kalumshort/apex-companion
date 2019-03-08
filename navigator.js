@@ -47,8 +47,8 @@ const navigationOptions = ({ navigation }) => {
             onPress={() => navigation.navigate('Home')}
             >
                 <Image
-                style={{width: 70, height: 40, padding:2}}
-                source={require('./assets/apex-legends-logo-red.png')} 
+                style={{width: 60, height: 60, padding:2}}
+                source={require('./assets/icon.png')} 
                 />
             </TouchableHighlight>
 

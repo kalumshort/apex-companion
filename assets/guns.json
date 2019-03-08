@@ -127,7 +127,7 @@
         },
         "gun2":{
             "name":"Devotion",
-            "ammotype":"Heavy",
+            "ammotype":"Energy",
             "firerate":"Auto",
             "magsize":"44",
             "bodydamage":"17",

@@ -186,7 +186,7 @@ const styles = StyleSheet.create({
     healingItems: {
         // width: WIDTH*0.9,
         borderWidth:1,
-        borderColor: '#42fc05',
+        borderColor: 'white',
         borderRadius: 5,
         marginTop: 5,
 
@@ -241,7 +241,7 @@ const styles = StyleSheet.create({
     },
     shieldItems: {
         borderWidth:1,
-        borderColor: '#05fcdf',
+        borderColor: 'white',
         borderRadius: 5,
         marginTop: 10,
 

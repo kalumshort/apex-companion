@@ -83,6 +83,7 @@ const styles = StyleSheet.create({
     },
     buttonContents: {
         alignItems:'center',
+        marginBottom: 10,
     },
     image: {
         width: WIDTH*0.6,
