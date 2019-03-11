@@ -47,7 +47,7 @@ const navigationOptions = ({ navigation }) => {
             onPress={() => navigation.navigate('Home')}
             >
                 <Image
-                style={{width: 60, height: 60, padding:2}}
+                style={{width: 50, height: 50, padding:2}}
                 source={require('./assets/icon.png')} 
                 />
             </TouchableHighlight>
