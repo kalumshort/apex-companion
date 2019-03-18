@@ -78,11 +78,11 @@ class HomePage extends Component {
 
                      {/* VIEW SEASONS */}
                      <TouchableHighlight
-                    onPress={this.props.handleAlertPress}
+                    onPress={this.props.handleSeasonsPress}
                     >
                         <ImageBackground
                         style={styles.itemImage}
-                        source={{uri:"https://culturedvultures.com/wp-content/uploads/2019/02/Apex-Legends-Seasons.jpg"}}>
+                        source={{uri:"https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-season-1-video-backup-xl.jpg.adapt.1920w.jpg"}}>
                             <Text style={styles.itemText}>Seasons</Text>
                         </ImageBackground>
                     </TouchableHighlight>

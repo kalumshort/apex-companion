@@ -13,6 +13,7 @@ class MapScreen extends Component {
         this.handleMapPress = this.handleMapPress.bind(this);
         this.handleAttachmentsPress = this.handleAttachmentsPress.bind(this);
         this.handleHealthPress = this.handleHealthPress.bind(this);
+        this.handleSeasonsPress = this.handleSeasonsPress.bind(this);
     }
     handleLegendsPress = () =>{
         this.props.navigation.navigate('Legends', {
@@ -32,6 +33,9 @@ class MapScreen extends Component {
     };
     handleHealthPress = () => {
         this.props.navigation.navigate('Health');
+    };
+    handleSeasonsPress = () => {
+        this.props.navigation.navigate('Seasons');
     };
 
     handleAlertPress = () => {
@@ -54,6 +58,7 @@ class MapScreen extends Component {
             handleAlertPress={this.handleAlertPress}
             handleAttachmentsPress={this.handleAttachmentsPress}
             handleHealthPress={this.handleHealthPress}
+            handleSeasonsPress={this.handleSeasonsPress}
             />
             </>
         )

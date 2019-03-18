@@ -28,6 +28,9 @@ import ContactScreen from './containers/ContactScreen';
 import AttachmentsScreen from './containers/AttachmentsScreen';
 // Importing the Health Page
 import HealthScreen from './containers/HealthScreen.js';
+// Importing the Seasons screen
+import SeasonScreen from './containers/SeasonsScreen.js'; 
+import Season1Screen from './containers/Season1Screen.js';
 // Importing the menu button component
 import MenuButton from './components/MenuButton';
 // Importing the drawer component
@@ -149,6 +152,22 @@ const HealthStack = createStackNavigator(
         defaultNavigationOptions: navigationOptions,
     }
 )
+
+//Making the Seasons Page
+const SeasonStack = createStackNavigator(
+    {
+        Seasons: {
+            screen: SeasonScreen
+        },
+        Season1: {
+            screen: Season1Screen
+        }
+    },
+    {
+        defaultNavigationOptions: navigationOptions,
+    }
+)
+
 // Making the Contact Screen Stack
 const ContactStack = createStackNavigator(
     {
@@ -182,6 +201,7 @@ const DrawerNavigator = createDrawerNavigator(
         Attachments: AttachmentsStack,
         Health: HealthStack,
         Map: MapStack,
+        Seasons: SeasonStack,
         Contact: ContactStack,
     },
     DrawerConfig
