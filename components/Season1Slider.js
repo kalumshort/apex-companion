@@ -19,12 +19,8 @@ class Season1Slider extends Component {
 
     render() {
         return (
-        <ImageSlider images={[
-        'http://placeimg.com/640/480/any',
-        'http://placeimg.com/640/480/any',
-        'http://placeimg.com/640/480/any'
-        ]}
-        />
+        
+        <Text>test</Text>
         )
     }
 }
