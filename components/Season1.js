@@ -14,8 +14,7 @@ import {
 
 // Package for making the images zommable
 import ImageZoom from 'react-native-image-pan-zoom';
-
-
+import Season1Slider from './Season1Slider';
 
 class Season1Page extends Component {
     constructor(props){
@@ -34,6 +33,9 @@ class Season1Page extends Component {
                     <View style={styles.headerContainer}>
                         <Text style={styles.headerSeason}>Season 1</Text>
                         <Text style={styles.headerName}>(Wild Frontier)</Text>
+                    </View>
+                    <View>
+                        <Season1Slider/>
                     </View>
                 </ScrollView>
             </View>

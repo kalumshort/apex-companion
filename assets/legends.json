@@ -211,5 +211,31 @@
             }
         }
         
+    },
+    {
+        "name":"OCTANE",
+        "img":"https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/legends-character-tiles/apex-grid-tile-legends-octane.png.adapt.crop16x9.png",
+        "subheading": "The Adrenaline Junkie",
+        "bio":"One day, Octavio Silva was bored. In fact, he was bored most days. Heir to the preoccupied CEOs of Silva Pharmaceuticals and wanting for nothing in life, he entertained himself by performing death-defying stunts and posting holovids of them for his fans to gawk over. So, this day, he decided to set the course record for a nearby Gauntlet by launching himself across the finish line – using a grenade.",
+        "realname": "Octavio Silva",
+        "age": "24",
+        "abilities": {
+            "tactical":{
+                "name": "Stim",
+                "about": "Move 30% faster for six seconds. Costs health to use.",
+                "img":"https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-tactical-octane.png.adapt.crop16x9.652w.png"
+            },
+            "passive":{
+                "name": "Swift Mend",
+                "about": "Automatically restores health over time. ",
+                "img": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-passive-octane.png.adapt.crop16x9.652w.png"
+            },
+            "ultimate":{
+                "name": "Launch Pad",
+                "about": "Deploy a jump pad that catapults teammates through the air.",
+                "img": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/ability-icons/apex-grid-tile-legends-abilities-ultimate-octane.png.adapt.crop16x9.652w.png"
+            }
+        }
+        
     }
 ]
