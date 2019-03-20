@@ -94,6 +94,16 @@ export default class MenuDrawer extends React.Component {
                         </TouchableOpacity>
                     </View>
                     <View>
+                        <TouchableOpacity style={styles.Links} onPress={() => this.props.navigation.navigate('Seasons')}>
+                            <MaterialCommunityIcons
+                                name="road"
+                                size={37}
+                                style={styles.icon}
+                            />
+                            <Text style={styles.link}>Seasons</Text>
+                        </TouchableOpacity>
+                    </View>
+                    <View>
                         <TouchableOpacity style={styles.Links} onPress={() => this.props.navigation.navigate('Contact')}>
                             <MaterialCommunityIcons
                                 name="message-text"

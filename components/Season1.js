@@ -26,7 +26,15 @@ class Season1Page extends Component {
             <>
             <View style={styles.container}>
                 <ScrollView>
-                  <Text>season 1</Text>
+                    <Image
+                    style={styles.headerImage}
+                    source={{uri:"https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/03/apex-tout-small-homepage-octane-5x2-xl.jpg.adapt.crop5x2.1920w.jpg"}}
+                    >
+                    </Image>
+                    <View style={styles.headerContainer}>
+                        <Text style={styles.headerSeason}>Season 1</Text>
+                        <Text style={styles.headerName}>(Wild Frontier)</Text>
+                    </View>
                 </ScrollView>
             </View>
             </>
@@ -43,7 +51,25 @@ const HEIGHT = Dimensions.get('window').height;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: 'grey'
+        backgroundColor: 'black'
+    },
+    headerImage: {
+        width: WIDTH*1,
+        height: HEIGHT*0.2,
+        marginTop: 10,
+    },
+    headerContainer: {
+        alignItems: 'center',
+    },
+    headerSeason: {
+        fontSize: 23,
+        color: 'white',
+        textAlign:'center',
+
+    },
+    headerName: {
+        fontStyle: 'italic',
+        color: 'white',
     },
     itemImage: {
         flex:1,

@@ -36,6 +36,18 @@ class SeasonsPage extends Component {
                             <Text style={styles.itemText}>Season 1</Text>
                         </ImageBackground>
                     </TouchableHighlight>
+
+                     {/* ALL SEASONS */}
+                     <TouchableHighlight
+                    onPress={this.props.handleAlertPress}
+                    >
+                        <ImageBackground
+                        style={styles.itemImage}
+                        // source={{uri:"https://media.contentapi.ea.com/content/dam/apex-legends/common/apex-section-bg-season-1-video-backup-xl.jpg.adapt.1920w.jpg"}}
+                        >
+                            <Text style={styles.itemText}>More Seasons Too Come Soon</Text>
+                        </ImageBackground>
+                    </TouchableHighlight>
                 </ScrollView>
             </View>
             </>
