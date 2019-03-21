@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { 
         View, 
+        Image,
         Text, 
         TouchableHighlight, 
         FlatList, 
@@ -11,29 +12,62 @@ import {
         } from 'react-native';
 
 import ImageSlider from 'react-native-image-slider';
+import Carousel from 'react-native-snap-carousel';
 
+import passItems from '../assets/season1pass.json';
+
+const WIDTH = Dimensions.get('window').width;
+const HEIGHT = Dimensions.get('window').height;
 class Season1Slider extends Component {
     constructor(props){
         super(props);
     }
 
-    render() {
+    
+    _renderItem ({item, index}) {
+
+        const source = {uri: item.img}
         return (
-        
-        <Text>test</Text>
-        )
+            <View style={styles.slide}>
+                <Image
+                    source={source}
+                    style={styles.image}
+                >
+                </Image>
+            </View>
+        );
+    }
+
+    render () {
+        return (
+            <Carousel
+              ref={(c) => { this._carousel = c; }}
+              data={passItems}
+              renderItem={this._renderItem}
+              sliderWidth={WIDTH*1}
+              itemWidth={WIDTH*0.4}
+            />
+        );
     }
 }
 
 export default Season1Slider;
 
-const WIDTH = Dimensions.get('window').width;
-const HEIGHT = Dimensions.get('window').height;
+
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: 'grey'
     },
+    slide: {
+        flex: 1,
+    },
+    image: {
+        // flex: 1,
+        width: WIDTH*0.4,
+        height: 250,
+        resizeMode: 'contain'
+    }
     
 })
