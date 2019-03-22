@@ -40,13 +40,16 @@ class Season1Slider extends Component {
 
     render () {
         return (
-            <Carousel
-              ref={(c) => { this._carousel = c; }}
-              data={passItems}
-              renderItem={this._renderItem}
-              sliderWidth={WIDTH*1}
-              itemWidth={WIDTH*0.4}
-            />
+            <View style={styles.Carousel}
+            >
+                <Carousel
+                    ref={(c) => { this._carousel = c; }}
+                    data={passItems}
+                    renderItem={this._renderItem}
+                    sliderWidth={WIDTH*1}
+                    itemWidth={WIDTH*0.3}
+                />
+            </View>
         );
     }
 }
@@ -60,12 +63,16 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: 'grey'
     },
+    Carousel: {
+        // backgroundColor: 'red',
+    },
     slide: {
-        flex: 1,
+        // flex: 1,
+        // backgroundColor: 'blue',
     },
     image: {
         // flex: 1,
-        width: WIDTH*0.4,
+        width: WIDTH*0.3,
         height: 250,
         resizeMode: 'contain'
     }
