@@ -31,7 +31,7 @@ class SeasonsScreen extends Component {
             <>
                 <SeasonsPage
                 handleSeason1Press = {this.handleSeason1Press}
-                handleAlertPress = {this.handleAlertPress}
+                // handleAlertPress = {this.handleAlertPress}
                 />
             </>
         )

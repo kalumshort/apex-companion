@@ -159,14 +159,15 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     headerSeason: {
-        fontSize: 23,
+        fontSize: 28,
         color: 'white',
         textAlign:'center',
 
     },
     headerName: {
+        fontSize: 20,
         fontStyle: 'italic',
-        color: 'white',
+        color: 'red',
     },
     newItems: {
         alignItems: 'center',
